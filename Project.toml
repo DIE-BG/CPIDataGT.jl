@@ -1,0 +1,7 @@
+name = "CPIDataGT"
+uuid = "39a16359-57f0-4aba-960c-77dbb3b4d29c"
+authors = ["Rodrigo Chang <rrcp777@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.6"
