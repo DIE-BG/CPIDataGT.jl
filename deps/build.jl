@@ -38,35 +38,32 @@ gtdata_64 = UniformCountryStructure(var_gt00_64, var_gt10_64)
 
 groups10 = CSV.read(datadir("Guatemala_IPC_2010_Groups.csv"), DataFrame)
 
-cpi_10_tree_32 = get_cpi_tree(
-    full_base = full_gt10_32, 
-    group_names = groups10[!, :GroupName], 
-    group_codes = groups10[!, :Code],
-    characters = (3, 4, 5, 6, 8) 
+cpi_10_tree_32 = CPITree(
+    base = full_gt10_32, 
+    groupsdf = groups10,
+    characters = (3, 4, 5, 6, 8),
 )
 
-cpi_10_tree_64 = get_cpi_tree(
-    full_base = full_gt10_64, 
-    group_names = groups10[!, :GroupName], 
-    group_codes = groups10[!, :Code],
-    characters = (3, 4, 5, 6, 8) 
+cpi_10_tree_64 = CPITree(
+    base = full_gt10_64, 
+    groupsdf = groups10,
+    characters = (3, 4, 5, 6, 8),
 )
+
 
 ## Construir el árbol jerárquico del IPC Base 2000
 groups00 = CSV.read(datadir("Guatemala_IPC_2000_Groups.csv"), DataFrame)
 
-cpi_00_tree_32 = get_cpi_tree(
-    full_base = full_gt00_32, 
-    group_names = groups00[!, :GroupName], 
-    group_codes = groups00[!, :Code],
-    characters = (3, 7)
+cpi_00_tree_32 = CPITree(
+    base = full_gt00_32, 
+    groupsdf = groups00,
+    characters = (3, 7),
 )
 
-cpi_00_tree_64 = get_cpi_tree(
-    full_base = full_gt00_64, 
-    group_names = groups00[!, :GroupName], 
-    group_codes = groups00[!, :Code],
-    characters = (3, 7)
+cpi_00_tree_64 = CPITree(
+    base = full_gt00_64, 
+    groupsdf = groups00,
+    characters = (3, 7),
 )
 
 ## Guardar datos en formato JLD2 para su carga posterior 
