@@ -3,7 +3,7 @@ using CPIDataBase
 using JLD2
 
 datadir(file) = joinpath("..", "data", file)
-@info "Exportando datos del IPC en variables `FGT00`, `FGT10`, `GT00_32`, `GT10_32`, `GTDATA_32`"
+@info "Exportando datos del IPC en variables `FGT00`, `FGT10`, `GT00`, `GT10`, `GTDATA`"
 
 ## Carga de datos de archivos CSV
 # Base 2000
