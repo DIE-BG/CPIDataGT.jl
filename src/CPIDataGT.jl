@@ -30,6 +30,7 @@ module CPIDataGT
         if !isfile(MAIN_DATAFILE)
             @warn "Archivo principal de datos no encontrado. Construya el paquete para generar los archivos de datos necesarios. Puede utilizar `import Pkg; Pkg.build(\"CPIDataGT\")`"
         else
+            @info "Loading Guatemalan data using `CPIDataGT.load_data()`"
             load_data()
         end
     end
