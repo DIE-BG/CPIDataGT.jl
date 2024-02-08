@@ -1,7 +1,7 @@
 name = "CPIDataGT"
 uuid = "39a16359-57f0-4aba-960c-77dbb3b4d29c"
 authors = ["DIE-BG contributors"]
-version = "0.3.2"
+version = "0.3.3-DEV"
 
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
