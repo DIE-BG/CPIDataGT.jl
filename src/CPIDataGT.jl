@@ -9,15 +9,15 @@ module CPIDataGT
     # infrastructure from CPIDataBase.
 
     ##  ------------------------------------------------------------------------
-    #   Cargar y exportar datos del IPC
+    #   Load and export IPC data
     #   ------------------------------------------------------------------------
 
-    export GT00, GT10 # VarCPIBase con variaciones intermensuales del IPC
-    export FGT00, FGT10 # FullCPIBase con datos completos del IPC (códigos, nombres)
+    export GT00, GT10 # CPIBaseVar with month-to-month IPC variations
+    export FGT00, FGT10 # FullCPIBase with complete IPC data (codes, names)
     export GTDATA # CountryStructure wrapper
-    export CPITREE00, CPITREE10 # Estructuras de árboles jerárquicos del IPC
+    export CPITREE00, CPITREE10 # IPC hierarchical tree structures
 
-    # Funciones para cargar datos 
+    # Functions to load data 
     export load_data, load_tree_data
 
     PROJECT_ROOT = pkgdir(@__MODULE__)
@@ -28,7 +28,7 @@ module CPIDataGT
 
     function __init__()
         if !isfile(MAIN_DATAFILE)
-            @warn "Archivo principal de datos no encontrado. Construya el paquete para generar los archivos de datos necesarios. Puede utilizar `import Pkg; Pkg.build(\"CPIDataGT\")`"
+            @warn "Main data file not found. Rebuild the package to generate the necessary files. Use `import Pkg; Pkg.build(\"CPIDataGT\")`"
         else
             @info "Loading Guatemalan data using `CPIDataGT.load_data()`"
             load_data()
@@ -38,31 +38,31 @@ module CPIDataGT
     """
         load_data(; full_precision = false)
 
-    Carga los datos del archivo principal de datos del IPC definido en `MAIN_DATAFILE` 
-    con precisión de 32 bits. 
-    - La opción `full_precision` permite cargar los datos con precisión de 64 bits.
-    - Archivo principal: `MAIN_DATAFILE = joinpath(pkgdir(@__MODULE__), "data", "gtdata32.jld2")`.
+    Load the data from the main CPI data file defined in `MAIN_DATAFILE` 
+    with 32-bit precision. 
+    - The option `full_precision` allows loading the data with 64-bit precision.
+    - Main file: `MAIN_DATAFILE = joinpath(pkgdir(@__MODULE__), "data", "gtdata32.jld2")`.
     """
     function load_data(; full_precision::Bool = false) 
         datafile = full_precision ? DOUBLE_DATAFILE : MAIN_DATAFILE 
 
-        @info "Cargando datos de Guatemala..."
+        @info "Loading Guatemalan CPI data..."
         global FGT00, FGT10, GT00, GT10, GTDATA = load(datafile, "fgt00", "fgt10", "gt00", "gt10", "gtdata")
-        @info "Datos cargados en constantes exportadas `FGT00`, `FGT10`, `GT00`, `GT10` y `GTDATA`"
+        @info "Data loaded in exported consts `FGT00`, `FGT10`, `GT00`, `GT10` y `GTDATA`"
     end
 
     """
         load_tree_data(; full_precision = false)
 
-    Carga los árboles jerárquicos del IPC en las variables `CPITREE00` y
-    `CPITREE10`. La opción `full_precision` permite cargar los datos con
-    precisión de 64 bits.
+    Load the hierarchical CPI trees into the variables `CPITREE00` and
+    `CPITREE10`. The option `full_precision` allows loading the data with
+    64-bit precision.
     """
     function load_tree_data(; full_precision::Bool = false) 
         datafile = full_precision ? DOUBLE_DATAFILE : MAIN_DATAFILE 
 
-        @info "Cargando árboles jerárquicos del IPC de Guatemala..."
+        @info "Loading the Guatemalan CPI hierarchical tree data..."
         global CPITREE00, CPITREE10 = load(datafile, "cpi_00_tree", "cpi_10_tree")
-        @info "Datos cargados en constantes exportadas `CPITREE00` y `CPITREE10`"
+        @info "Data loaded in exported consts `CPITREE00` y `CPITREE10`"
     end
 end
