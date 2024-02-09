@@ -12,10 +12,13 @@ module CPIDataGT
     #   Load and export IPC data
     #   ------------------------------------------------------------------------
 
-    export GT00, GT10 # CPIBaseVar with month-to-month IPC variations
-    export FGT00, FGT10 # FullCPIBase with complete IPC data (codes, names)
-    export GTDATA # CountryStructure wrapper
-    export CPITREE00, CPITREE10 # IPC hierarchical tree structures
+    export GT00, GT10               # CPIBaseVar with month-to-month IPC variations
+    export FGT00, FGT10             # FullCPIBase with complete IPC data (codes, names)
+    export GTDATA                   # CountryStructure wrapper
+    export CPITREE00, CPITREE10     # CPI hierarchical tree structures
+
+    # Experimental
+    export FGT23, GT23, GTDATA23
 
     # Functions to load data 
     export load_data, load_tree_data
@@ -48,7 +51,9 @@ module CPIDataGT
 
         @info "Loading Guatemalan CPI data..."
         global FGT00, FGT10, GT00, GT10, GTDATA = load(datafile, "fgt00", "fgt10", "gt00", "gt10", "gtdata")
-        @info "Data loaded in exported consts `FGT00`, `FGT10`, `GT00`, `GT10` y `GTDATA`"
+        @info "Data loaded in exported structures `FGT00`, `FGT10`, `GT00`, `GT10` y `GTDATA`"
+        global FGT23, GT23, GTDATA23 = load(datafile, "fgt23", "gt23", "gtdata_exp")
+        @info "Experimental new data on `FGT23`, `GT23`, `GTDATA23`"
     end
 
     """
