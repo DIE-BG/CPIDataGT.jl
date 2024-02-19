@@ -15,7 +15,7 @@ module CPIDataGT
     export GT00, GT10               # CPIBaseVar with month-to-month IPC variations
     export FGT00, FGT10             # FullCPIBase with complete IPC data (codes, names)
     export GTDATA                   # CountryStructure wrapper
-    export CPITREE00, CPITREE10     # CPI hierarchical tree structures
+    export CPITREE00, CPITREE10, CPITREE23     # CPI hierarchical tree structures
 
     # Experimental
     export FGT23, GT23, GTDATA23
@@ -67,7 +67,7 @@ module CPIDataGT
         datafile = full_precision ? DOUBLE_DATAFILE : MAIN_DATAFILE 
 
         @info "Loading the Guatemalan CPI hierarchical tree data..."
-        global CPITREE00, CPITREE10 = load(datafile, "cpi_00_tree", "cpi_10_tree")
-        @info "Data loaded in exported consts `CPITREE00` y `CPITREE10`"
+        global CPITREE00, CPITREE10, CPITREE23 = load(datafile, "cpi_00_tree", "cpi_10_tree", "cpi_23_tree")
+        @info "Data loaded in exported consts `CPITREE00`, `CPITREE10` and `CPITREE23`"
     end
 end

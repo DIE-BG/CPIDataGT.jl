@@ -1,0 +1,759 @@
+Code,GroupName,Level
+_0111101,Arroz,Producto
+_0111102,Maíz,Producto
+_0111201,Harina de trigo,Producto
+_0111202,Harina de maíz,Producto
+_0111203,Harina para atoles,Producto
+_0111301,Pan,Producto
+_0111302,Pan dulce,Producto
+_0111303,Galletas ,Producto
+_0111304,Tortillas,Producto
+_0111305,Productos de panadería/pastelería,Producto
+_0111306,Otros productos de panadería,Producto
+_0111401,Cereales de bolsa o caja,Producto
+_0111402,Avena/mosh,Producto
+_0111501,Espagueti,Producto
+_0111502,Fideos en todas sus formas (Excepto macarrones y espagueti),Producto
+_0111503,Chao mein,Producto
+_0112101,"Pollos, gallinas y gallos vivos",Producto
+_0112201,Carne fresca de res,Producto
+_0112202,Carne fresca de cerdo ,Producto
+_0112203,Carne fresca de pollo,Producto
+_0112401,Menudos de pollo ,Producto
+_0112402,Menudos de res,Producto
+_0112501,Salchichas y productos similares de carne,Producto
+_0112502,"Jamón (pollo, res, cerdo, mixto, etc.)",Producto
+_0112503,Longanizas y chorizos (de todo tipo),Producto
+_0112504,Medallones y milanesas de pollo,Producto
+_0112505,"Tortas de carne (pollo, res y cerdo)",Producto
+_0112506,Carne de cerdo marinada,Producto
+_0113101,"Pescado entero, fresco, refrigerado o congelado",Producto
+_0113201,Pescado seco,Producto
+_0113301,Sardinas enlatadas ,Producto
+_0113401,"Camarones frescos, refrigerados o congelados",Producto
+_0114101,Leche líquida entera,Producto
+_0114201,Leche liquida baja en grasas,Producto
+_0114301,Leche en polvo,Producto
+_0114302,Crema de leche,Producto
+_0114501,Queso fresco,Producto
+_0114502,Queso crema,Producto
+_0114503,Queso mozzarella,Producto
+_0114504,Queso seco ,Producto
+_0114601,Yogur industrializado,Producto
+_0114701,Bebidas lácteas en base a leche liquida,Producto
+_0114801,Huevos de gallina,Producto
+_0115101,Aceite de origen vegetal,Producto
+_0115301,Margarina vegetal regular,Producto
+_0116101,Aguacates frescos,Producto
+_0116102,Bananos frescos,Producto
+_0116103,Plátanos frescos,Producto
+_0116104,Mangos,Producto
+_0116105,Papayas frescas,Producto
+_0116106,Piñas frescas,Producto
+_0116201,Limones frescos,Producto
+_0116202,Naranjas frescas,Producto
+_0116301,Manzanas frescas,Producto
+_0116302,Duraznos,Producto
+_0116401,Fresas frescas,Producto
+_0116501,Uvas frescas,Producto
+_0116502,Melones frescos,Producto
+_0116503,Sandías frescas,Producto
+_0117101,"Repollo, fresco o refrigerado",Producto
+_0117102,Coliflor,Producto
+_0117103,Brócoli,Producto
+_0117104,Lechuga,Producto
+_0117105,Apio ,Producto
+_0117106,Hierbas aromáticas para cocinar,Producto
+_0117107,Pacaya,Producto
+_0117108,Hierbas naturales para caldo,Producto
+_0117109,Chipilín,Producto
+_0117201,Chile pimiento fresco,Producto
+_0117202,Pepinos frescos,Producto
+_0117203,Tomate fresco,Producto
+_0117204,Güisquil,Producto
+_0117205,Güicoy,Producto
+_0117301,"Ejotes, frescos o refrigerados",Producto
+_0117401,Zanahorias,Producto
+_0117402,Rábanos,Producto
+_0117403,Cebollas,Producto
+_0117404,Maíz verde (elote),Producto
+_0117405,Verduras frescas o refrigeradas limpias y cortadas,Producto
+_0117501,Papas,Producto
+_0117601,"Frijoles negros, secos",Producto
+_0117602,"Frijoles colorados, secos",Producto
+_0117603,"Otros frijoles, secos (piloy, pinto, blanco, etc.)",Producto
+_0117901,Frijoles procesados y envasados,Producto
+_0118101,Azúcar de caña,Producto
+_0118301,Miel,Producto
+_0118501,Pastilla de chocolate para hervir,Producto
+_0118601,"Helado industrializado (base a leche, hielo, fruta, etc.)",Producto
+_0118901,Otra confitería de azúcar y postres N.E.C. (No contiene cacao),Producto
+_0119101,Sopas instantáneas,Producto
+_0119201,Alimentos para bebé,Producto
+_0119301,Sal,Producto
+_0119302,Consomé,Producto
+_0119303,Sazonadores y ablandadores,Producto
+_0119304,Salsa de tomate,Producto
+_0119305,Salsa tipo Kétchup ,Producto
+_0119306,Mayonesa ,Producto
+_0119401,Chiles secos enteros y molidos,Producto
+_0119901,Bases para sopas,Producto
+_0119902,Suplementos nutricionales ,Producto
+_0119903,"Snacks (excluye papalinas, plataninas, yucas, malangas, etc.)",Producto
+_0119904,Hojas para tamales,Producto
+_0121001,Jugos de frutas líquidos ,Producto
+_0121002,Jugos de frutas en polvo,Producto
+_0122001,Café molido,Producto
+_0122002,Café instantáneo,Producto
+_0123001,Té de frutas y medicinales,Producto
+_0125001,Agua purificada,Producto
+_0126001,Gaseosas,Producto
+_0129001,Bebidas hidratantes y energizantes,Producto
+_0130001,Servicio de molienda de maíz,Producto
+_0211001,Aguardiente,Producto
+_0211002,Whisky,Producto
+_0213001,Cerveza (todo tipo),Producto
+_0230101,Cigarros,Producto
+_0311001,Tela para ropa uso diario,Producto
+_0312101,Chumpas para hombres (mayores de 12 años),Producto
+_0312102,Suéteres de algodón para hombres (mayores de 12 años),Producto
+_0312103,Camisas con botones para hombres (mayores de 12 años),Producto
+_0312104,Camisas tipo Polo para hombres (mayores de 12 años),Producto
+_0312105,Playeras para hombres (mayores de 12 años),Producto
+_0312106,Pantalones de vestir para hombres (mayores de 12 años),Producto
+_0312107,Pantalones de lona para hombres (mayores de 12 años),Producto
+_0312108,Pantalones largos deportivo para hombres (mayores a 12 años),Producto
+_0312109,Pantalonetas deportivas para hombres (mayores de 12 años),Producto
+_0312110,Trajes formales (incluye los trajes formales tradicionales)para hombres (mayores de 12 años),Producto
+_0312111,Calzoncillos para hombres (mayores de 12 años),Producto
+_0312112,Calcetines para hombres (mayores de 12 años),Producto
+_0312201,Chumpas y chaquetas para niños (mayores de 2 y menores de 12 años),Producto
+_0312202,Camisas de vestir para niños (mayores de 2 y menores de 12 años),Producto
+_0312203,Playeras para niños (mayores de 2 y menores de 12 años),Producto
+_0312204,Pantalones de vestir para niños (mayores de 2 y menores de 12 años),Producto
+_0312205,Pantalones de lona para niños (mayores de 2 y menores de 12 años),Producto
+_0312206,Trajes formales (incluye los trajes formales tradicionales) para niños (mayores de 2 y menores de 12 años),Producto
+_0312207,Calzoncillos para niños (mayores de 2 y menores de 12 años),Producto
+_0312208,Calcetines para niños (mayores de 2 y menores de 12 años),Producto
+_0312301,"Suéteres, mañaneras para mujeres (mayores de 12 años)",Producto
+_0312302,Blusas formales para mujeres (mayores de 12 años),Producto
+_0312303,Blusas casuales para mujeres (mayores de 12 años),Producto
+_0312304,Pantalones de vestir de tela para mujeres (mayores de 12 años),Producto
+_0312305,Pantalones de lona para mujeres (mayores de 12 años),Producto
+_0312306,Vestidos formales y casuales para mujeres (mayores de 12 años),Producto
+_0312307,Vestidos de fiesta para mujeres (mayores de 12 años),Producto
+_0312308,Faldas formales y casuales para mujeres (mayores de 12 años),Producto
+_0312309,Traje tradicional para mujeres (mayores de 12 años),Producto
+_0312310,Prenda tradicional para mujeres (mayores de 12 años) ,Producto
+_0312311,Calzones para mujeres (mayores de 12 años),Producto
+_0312312,Sostenes para mujeres (mayores de 12 años),Producto
+_0312401,"Suéteres, mañaneras para niñas (mayores de 2 y menores de 12 años)",Producto
+_0312402,Blusas formales y casuales para niñas (mayores de 2 y menores de 12 años),Producto
+_0312403,Pantalones de lona para niñas (mayores de 2 y menores de 12 años),Producto
+_0312404,Traje tradicional para niñas (mayores de 2 y menores de 12 años),Producto
+_0312405,Prenda tradicional para niñas (mayores de 2 y menores de 12 años),Producto
+_0312406,Vestidos formales y casuales para niñas (mayores de 2 y menores de 12 años),Producto
+_0312407,Calzones para niñas (mayores de 2 y menores de 12 años),Producto
+_0312501,Camisas/blusas para bebés (menores de 2 años),Producto
+_0312502,"Chaquetas, suéteres, abrigos para bebés (menores de 2 años)",Producto
+_0312503,Pantalones para bebés (menores de 2 años),Producto
+_0312504,Mamelucos y bodys para bebés (menores de 2 años),Producto
+_0312601,Uniformes escolares en general,Producto
+_0313101,Cinchos,Producto
+_0313102,Gorras,Producto
+_0313201,Hilos,Producto
+_0314101,Lavado ,Producto
+_0321101,Zapato acordonado para hombre,Producto
+_0321102,Zapato tipo mocasín para hombre ,Producto
+_0321103,Botas y botines para hombre ,Producto
+_0321104,Tenis (Zapatillas) para hombre,Producto
+_0321105,"Sandalias (chanclas, caites, pantuflas) para hombre",Producto
+_0321201,Zapatos casuales para mujer,Producto
+_0321202,Zapatos de tacón alto y bajo para mujer ,Producto
+_0321203,Sandalias con o sin tacón para mujer,Producto
+_0321204,Botas o botines con y sin tacón para mujer ,Producto
+_0321205,"Chanclas, caites, pantuflas para mujer",Producto
+_0321206,Tenis (Zapatillas) para mujer,Producto
+_0321301,"Zapatos casuales (incluye sandalias, chanclas, caites y pantuflas) para niños (menores a 13 años)",Producto
+_0321302,Zapatos escolares para niños (menores a 13 años),Producto
+_0321303,Tenis (Zapatillas) para niños (menores a 13 años),Producto
+_0411101,Alquiler de vivienda,Producto
+_0431101,Pintura (de agua o aceite),Producto
+_0431102,Cemento,Producto
+_0431103,Cal,Producto
+_0431104,Block,Producto
+_0431105,Otros productos y materiales para reparación y mantenimiento,Producto
+_0431106,Artículos de plomería,Producto
+_0431107,Madera,Producto
+_0431108,Pisos,Producto
+_0431109,Puertas y ventanas,Producto
+_0432101,Servicios de mantenimiento y reparación de viviendas,Producto
+_0432102,Servicio de vigilancia residencial,Producto
+_0441101,Pago por consumo de agua,Producto
+_0441201,Compra de agua para el hogar por otros medios (no agua para beber),Producto
+_0442001,Pago por servicio de recolección de basura,Producto
+_0451001,Consumo de energía eléctrica,Producto
+_0452201,Gas en contenedores,Producto
+_0454101,Carbón,Producto
+_0454201,Leña,Producto
+_0454202,Ocote,Producto
+_0511101,Muebles de sala,Producto
+_0511102,Muebles de comedor ,Producto
+_0511103,Muebles de cocina,Producto
+_0511104,Muebles de dormitorio,Producto
+_0511401,Espejos,Producto
+_0521101,Cortinas,Producto
+_0521201,Ropa de cama,Producto
+_0521202,Hamacas,Producto
+_0521301,Manteles,Producto
+_0521302,Toallas de tela,Producto
+_0531101,Refrigeradores y refrigeradores de temperatura dual,Producto
+_0531102,Estufas,Producto
+_0531103,Hornos pequeños,Producto
+_0531201,Lavadoras,Producto
+_0532101,Licuadoras,Producto
+_0532901,Ventiladores,Producto
+_0540101,Vajillas,Producto
+_0540301,Ollas y cacerolas,Producto
+_0540302,Sartenes,Producto
+_0540303,Ollas a presión,Producto
+_0540304,Vasos y tazas de  plástico y melamina,Producto
+_0551001,Herramienta eléctrica,Producto
+_0552101,Herramientas no motorizadas,Producto
+_0552201,Bombillas,Producto
+_0561101,Detergente en polvo o líquido,Producto
+_0561102,Jabón para ropa,Producto
+_0561103,Desinfectante,Producto
+_0561104,Cloro,Producto
+_0561105,"Jabón para trastos en crema, líquido, trozo y polvo",Producto
+_0561106,Suavizantes de ropa,Producto
+_0561107,Escobas,Producto
+_0561108,Esponjas,Producto
+_0561901,Aromatizante ambiental,Producto
+_0561902,"Insecticidas, pesticidas, fungicidas",Producto
+_0561903,Papel de cocina,Producto
+_0561904,Papel aluminio,Producto
+_0561905,Veladoras,Producto
+_0561906,Velas y candelas,Producto
+_0561907,Fósforos y/o cerillos ,Producto
+_0561908,Lazos y cordeles para tender ropa,Producto
+_0562101,Servicio para el hogar,Producto
+_0611101,Acetaminofén (Paracetamol),Producto
+_0611102,Diclofenaco ,Producto
+_0611103,Ibuprofeno,Producto
+_0611104,Ambroxol y Bromhexina,Producto
+_0611105,Dextrometorfano y/o guaifenesina,Producto
+_0611106,Losartán,Producto
+_0611107,Irbesartán,Producto
+_0611108,Valsartán,Producto
+_0611109,Enalapril,Producto
+_0611110,Medicamentos para la diabetes,Producto
+_0611111,Medicamentos neurológicos o neurofármacos  ,Producto
+_0611112,Medicamentos oftalmológicos,Producto
+_0611113,Medicamentos dermatológicos ,Producto
+_0611114,"Vitaminas, multivitamínicos y minerales",Producto
+_0611115,Medicamentos para huesos y articulaciones,Producto
+_0611116,Medicamentos relajantes musculares,Producto
+_0611117,Medicamentos gastrointestinales,Producto
+_0611118,Amoxicilina,Producto
+_0611119,Penicilina,Producto
+_0611120,Trimetoprim y/o sulfametoxazol,Producto
+_0611121,Alcohol medicinal,Producto
+_0611122,Mercuriocromo,Producto
+_0611123,Mertiolate o metafe,Producto
+_0611124,"Anticonceptivos (orales, inyectables, subdérmicos y subcutáneos)",Producto
+_0611125,Loratadina,Producto
+_0611201,Medicamentos naturales y homeopáticos,Producto
+_0612201,Dispositivos o productos terapéuticos,Producto
+_0612301,Otros dispositivos de tratamiento para uso personal,Producto
+_0612302,Productos para botiquín,Producto
+_0613101,Lentes correctivos completos y por separado (aros o lentes),Producto
+_0613301,Productos para incontinencia,Producto
+_0621901,Consulta con ginecólogo y obstetra,Producto
+_0621902,Consulta con pediatra,Producto
+_0621903,Consulta con cardiólogo,Producto
+_0621904,Consulta con gastroenterólogo ,Producto
+_0621905,Consulta con oftalmólogo,Producto
+_0621906,Consulta con endocrinólogo,Producto
+_0621907,Consulta con traumatólogo,Producto
+_0621908,Consulta con neumólogo,Producto
+_0621909,Consulta con médico general internista,Producto
+_0622101,Limpieza dental ,Producto
+_0622901,Servicio extracción dental ,Producto
+_0622902,Servicio de relleno dental,Producto
+_0622903,Servicio de ortodoncia (Brackets y retenedores),Producto
+_0622904,Servicio de endodoncia,Producto
+_0622905,Servicio de implantes dentales ,Producto
+_0631001,Parto normal,Producto
+_0631002,Parto con cesárea,Producto
+_0631003,Hospitalización sin cirugía ,Producto
+_0631004,Hospitalización con cirugía ,Producto
+_0631005,Hospitalización por cuadro respiratorio,Producto
+_0641101,Exámenes de sangre ,Producto
+_0641102,Otros exámenes de laboratorio,Producto
+_0641201,Radiografía ,Producto
+_0641202,Ultrasonido ,Producto
+_0641203,Electrocardiograma,Producto
+_0641204,Tomografía,Producto
+_0641205,Resonancia,Producto
+_0711101,Vehículo nuevo ,Producto
+_0711102,Pick up nuevo,Producto
+_0711103,Camioneta nueva,Producto
+_0712001,Motocicleta,Producto
+_0713001,Bicicleta,Producto
+_0721101,Llantas nuevas,Producto
+_0721201,Baterías,Producto
+_0721202,Amortiguadores,Producto
+_0721203,Otros repuestos para equipo de transporte personal,Producto
+_0722101,Diesel,Producto
+_0722201,Gasolina,Producto
+_0722401,Aceite de motor,Producto
+_0722402,Líquido de frenos,Producto
+_0723101,Lavado y lustrado de vehículos,Producto
+_0723102,Servicio de pinchazo,Producto
+_0723103,Servicio menor ,Producto
+_0723104,Servicio de frenos,Producto
+_0723105,Montaje de piezas/accesorios,Producto
+_0723106,Otros servicios de mantenimiento y reparación de vehículos,Producto
+_0724101,Alquiler de estacionamiento,Producto
+_0724102,Pago de parqueo,Producto
+_0724301,Examen para obtención de licencia,Producto
+_0724302,Renovación o reposición de licencia,Producto
+_0732101,"Transporte urbano (bus urbano, transmetro , transurbano)",Producto
+_0732102,"Transporte interurbano nacional (departamentales, municipales)",Producto
+_0732103,Taxi compartido/colectivo,Producto
+_0732201,Taxi,Producto
+_0732202,Transporte particular/privado,Producto
+_0732301,Transporte escolar,Producto
+_0732901,Otros tipos de taxi,Producto
+_0733201,Transporte de pasajeros por aire en horarios internacionales y vuelos regulares,Producto
+_0741201,Servicio de paquetería nacional,Producto
+_0812001,Teléfonos inteligentes,Producto
+_0813101,Computadoras,Producto
+_0813102,Tablets o tabletas electrónicas ,Producto
+_0813201,Impresoras de uso doméstico,Producto
+_0814001,Televisores,Producto
+_0814002,Equipos de sonido para el hogar ,Producto
+_0819201,Cargadores para dispositivos móviles,Producto
+_0831001,Servicio de telefonía fijo,Producto
+_0832001,Servicio de telefonía móvil post pago,Producto
+_0832002,Servicio de telefonía móvil pre pago ,Producto
+_0833001,"Servicios de acceso a internet provistos por operadores de red con infraestructura cableada, inalámbrica o satelital",Producto
+_0834001,Paquetes con cualquier combinación de telecomunicación,Producto
+_0835001,Reparación de todo equipo de información y comunicación,Producto
+_0839201,Servicios de streaming (música y televisión/películas),Producto
+_0839202,"Suscripción a Televisión por cable, TV satelital, IPTV y Televisión por pago",Producto
+_0921101,Consolas de videojuegos,Producto
+_0921201,"Muñecas, juguetes de peluche",Producto
+_0921202,"Carros de juguete, trenes ",Producto
+_0921203,Bicicletas para jugar y triciclos (para niños pequeños),Producto
+_0922101,"Calzado específico para el juego (botas de esquí, zapatos de football, golf y similares)",Producto
+_0931201,"Flores interiores (naturales o artificiales, en floreros o no)",Producto
+_0931202,Flores exteriores,Producto
+_0932101,Compra de mascotas,Producto
+_0932102,Alimento para mascotas,Producto
+_0945001,Servicios veterinarios,Producto
+_0946201,Gimnasio,Producto
+_0946202,Lecciones deportes,Producto
+_0961001,Cines,Producto
+_0971101,Libros de texto de educación formal,Producto
+_0971901,Libros religiosos,Producto
+_0971902,Libros complementarios,Producto
+_0972101,Diarios y periódicos nacionales,Producto
+_0974001,Lista de útiles escolares,Producto
+_0974002,Cuadernos,Producto
+_0974003,Papel para artes y para envolver,Producto
+_0974004,"Hojas de cuadrícula, líneas, bond",Producto
+_0974005,Tijeras,Producto
+_0974006,Crayones y marcadores,Producto
+_0974007,Mochilas escolares,Producto
+_0974008,Lápices y lapiceros,Producto
+_0980001,Paquete turístico para viajar al extranjero,Producto
+_1010101,Servicio de educación preprimaria,Producto
+_1010201,Servicios de educación primaria,Producto
+_1020001,Servicios de educación básica,Producto
+_1020002,Servicios de educación diversificado,Producto
+_1020003,Servicios de educación por cooperativa,Producto
+_1040001,Educación universitaria,Producto
+_1050101,Tutorías,Producto
+_1050901,Cursos de Capacitación técnica,Producto
+_1050902,Cursos de idiomas,Producto
+_1050903,Cursos de informática,Producto
+_1111101,Desayuno o cena simple (bebida y un acompañamiento),Producto
+_1111102,Desayuno o cena continental (bebida y dos acompañamientos),Producto
+_1111103,Desayuno o cena completo (bebida caliente y mas de dos acompañamientos),Producto
+_1111104,Otro tipo de desayuno o cena,Producto
+_1111105,"Almuerzo simple (bebida, carne y acompañamiento) excluye gaseosa",Producto
+_1111106,Almuerzo  simple (bebida y plato sin carne) excluye gaseosa ,Producto
+_1111107,"Almuerzo  (bebida, entrada y plato con carne)",Producto
+_1111108,Almuerzo buffet,Producto
+_1111201,Combos de comida rápida individual ,Producto
+_1111202,Combos de comida rápida familiar,Producto
+_1111203,Platos preparados ,Producto
+_1111204,Panes tipo sándwich,Producto
+_1111205,Alimentos a base de tortilla,Producto
+_1111206,Otros tipos de alimentos regionales ,Producto
+_1111207,"Pastelería, repostería y postres",Producto
+_1111208,Bocadillos,Producto
+_1111209,Bebidas no alcohólicas frías servidas en el lugar,Producto
+_1111210,Bebidas no alcohólicas calientes servidas en el lugar,Producto
+_1111211,Gasto en alimentos para celebraciones,Producto
+_1120101,Alojamiento en hoteles,Producto
+_1211001,Seguro Funerario,Producto
+_1212001,Seguro Médico,Producto
+_1214101,Seguro de vehículos,Producto
+_1221001,Servicios financieros de tarjetas de crédito,Producto
+_1229901,Otros servicios financieros,Producto
+_1311101,Maquinas para afeitar eléctricas y depiladoras eléctricas,Producto
+_1312001,Cepillos de dientes,Producto
+_1312002,Papel higiénico,Producto
+_1312003,Jabón de baño en todas sus presentaciones,Producto
+_1312004,Pasta de dientes y enjuagues bucales,Producto
+_1312005,Shampoo y/o acondicionador,Producto
+_1312006,Productos para protección femenina ,Producto
+_1312007,Pañales para bebes,Producto
+_1312008,Toallas húmedas para bebés,Producto
+_1312009,Hisopos,Producto
+_1312010,Crema para el cuerpo y rostro,Producto
+_1312011,Desodorante y/o antitranspirante,Producto
+_1312012,Maquillaje,Producto
+_1312013,Otros productos de belleza,Producto
+_1313101,Cortes de cabello para hombre,Producto
+_1313102,Cortes de cabello para mujer,Producto
+_1313103,Peinados y aplicación de tintes para el cabello ,Producto
+_1313104,Colocación de uñas acrílicas ,Producto
+_1313105,Servicio de depilación,Producto
+_1313201,Servicio de manicura y pedicura,Producto
+_1321101,Anillos,Producto
+_1321102,Cadenas,Producto
+_1321103,Aretes,Producto
+_1321104,Relojes de pulsera,Producto
+_1329101,Sombrillas y paraguas,Producto
+_1329102,Ataúdes,Producto
+_1329103,"Compra, alquiler o préstamo de nicho",Producto
+_1390901,Servicios legales y financieros,Producto
+_1390902,Servicios funerarios,Producto
+_1390903,Servicios de registro civil,Producto
+_1390904,Pago de impuestos de circulación de vehículo,Producto
+_1390905,Fiestas y celebraciones,Producto
+_01111,Cereales (ND),Subclase
+_01112,Harina de cereales (ND),Subclase
+_01113,Productos de pan y panadería (ND),Subclase
+_01114,Cereales para desayuno (ND),Subclase
+_01115,"Macarrones, fideos, cuscús y productos de pasta similares (ND)",Subclase
+_01121,Animales vivos terrestres (ND),Subclase
+_01122,"Carne, fresca, refrigerada o congelada (ND)",Subclase
+_01124,"Despojos, sangre y otras partes de animales sacrificados, frescos, refrigerados o congelados, secos, salados, en salmuera o ahumados (ND)",Subclase
+_01125,"Carne, despojos, sangre y otras partes de las preparaciones de animales sacrificados (ND)",Subclase
+_01131,"Pescado, vivo, fresco, refrigerado o congelado (ND)",Subclase
+_01132,"Pescados, secos, salados, en salmuera o ahumados (ND)",Subclase
+_01133,Preparaciones de pescado (ND),Subclase
+_01134,"Otros mariscos, vivos, frescos, refrigerados o congelados (ND)",Subclase
+_01141,Leche cruda y entera (ND),Subclase
+_01142,Leche descremada (ND),Subclase
+_01143,Otras leche y crema (ND),Subclase
+_01145,Queso (ND),Subclase
+_01146,Yogur y productos similares (ND),Subclase
+_01147,Postre y bebidas a base de leche (ND),Subclase
+_01148,Huevos (ND),Subclase
+_01151,Aceites vegetales (ND),Subclase
+_01153,Margarina y preparaciones similares (ND),Subclase
+_01161,"Dátiles, higos y frutas tropicales, frescas (ND)",Subclase
+_01162,"Frutas cítricas, frescas (ND)",Subclase
+_01163,"Frutas con hueso y frutas de pomo, frescas (ND)",Subclase
+_01164,"Bayas, frescas (ND)",Subclase
+_01165,Otras frutas frescas (ND),Subclase
+_01171,"Vegetales de hoja o tallo, frescas o refrigeradas (ND)",Subclase
+_01172,"Vegetales de fruto, frescos o refrigerados (ND)",Subclase
+_01173,"Leguminosas, frescas o refrigeradas (ND)",Subclase
+_01174,"Otras verduras, frescas o refrigeradas (ND)",Subclase
+_01175,"Tubérculos, plátanos y bananos de cocción (ND)",Subclase
+_01176,Legumbres (ND),Subclase
+_01179,"Vegetales, tubérculos, plátanos, bananos de cocción y legumbres molidos y otras preparaciones (ND)",Subclase
+_01181,Azúcar de caña y remolacha (ND),Subclase
+_01183,"Mermeladas, jaleas de frutas, puré de frutas y pastas, miel (ND)",Subclase
+_01185,"Chocolate, cacao y productos a base de cacao (ND)",Subclase
+_01186,"Hielo, helado y sorbete (ND)",Subclase
+_01189,Otra confitería de azúcar y postres N.E.C. ,Subclase
+_01191,Comida preparada (ND),Subclase
+_01192,Comida para bebés (ND),Subclase
+_01193,"Sal, condimentos y salsas (ND)",Subclase
+_01194,"Especias, hierbas y semillas culinarias (ND)",Subclase
+_01199,Otros productos alimenticios N.E.C. ,Subclase
+_01210,Jugos de frutas y verduras (ND),Subclase
+_01220,Café y sustitutos de café (ND),Subclase
+_01230,"Té, mate y otros productos vegetales para infusión (ND)",Subclase
+_01250,Agua (ND),Subclase
+_01260,Gaseosas (ND),Subclase
+_01290,Otras bebidas no alcohólicas (ND),Subclase
+_01300,Servicios para procesar bienes primarios para alimentos y bebidas no alcohólicas,Subclase
+_02110,Alcohol (bebidas alcohólicas) y licores,Subclase
+_02130,Cerveza,Subclase
+_02301,Cigarros,Subclase
+_03110,Materiales de confección ,Subclase
+_03121,Prendas de vestir para hombres (mayores de 12 años),Subclase
+_03122,Prendas de vestir para niños (mayores de 2 y menores de 12 años),Subclase
+_03123,Prendas de vestir para mujeres (mayores de 12 años),Subclase
+_03124,Prendas de vestir para niñas (mayores de 2 y menores de 12 años),Subclase
+_03125,Prendas de vestir para bebés (menores de 2 años),Subclase
+_03126,Uniformes escolares,Subclase
+_03131,Otras prendas de vestir,Subclase
+_03132,Accesorios de confección,Subclase
+_03141,Limpieza de ropa,Subclase
+_03211,Zapatos para hombre,Subclase
+_03212,Zapatos para mujer,Subclase
+_03213,Zapatos para bebés y niños,Subclase
+_04111,Alquiler efectivo de vivienda principal (con todos los servicios),Subclase
+_04311,Materiales para mantenimiento y reparación de viviendas,Subclase
+_04321,"Servicios de mantenimiento, reparación y seguridad de viviendas",Subclase
+_04411,Red de abastecimiento de agua (facturas pagadas por los hogares),Subclase
+_04412,Abastecimiento de agua por otros medios,Subclase
+_04420,Recolección de basura,Subclase
+_04510,Electricidad,Subclase
+_04522,Hidrocarburos licuados,Subclase
+_04541,Carbón natural,Subclase
+_04542,Combustible proveniente de madera,Subclase
+_05111,Mobiliario para el hogar,Subclase
+_05114,"Mobiliario, alfombras y moquetas",Subclase
+_05211,Telas para muebles y cortinas,Subclase
+_05212,Ropa de cama,Subclase
+_05213,Mantelería y ropa de baño,Subclase
+_05311,Electrodomésticos de cocina principales,Subclase
+_05312,Electrodomésticos de lavandería principales,Subclase
+_05321,Electrodomésticos para cocinar y procesar alimentos,Subclase
+_05329,Otros electrodomésticos pequeños,Subclase
+_05401,"Cristalería, cerámica y loza utilizados para cocina, comedor, baño, oficina y decoración de interiores",Subclase
+_05403,Utensilios y artículos de cocina,Subclase
+_05510,Herramientas y equipos motorizados,Subclase
+_05521,Herramientas no motorizadas,Subclase
+_05522,Accesorios varios,Subclase
+_05611,Productos de limpieza y mantenimiento del hogar,Subclase
+_05619,Otros artículos domésticos no duraderos,Subclase
+_05621,Servicios domésticos por personal remunerado,Subclase
+_06111,"Medicinas, vacunas y otras preparaciones farmacéuticas",Subclase
+_06112,Medicamentos naturales y homeopáticos,Subclase
+_06122,Dispositivos de prevención y protección,Subclase
+_06123,Dispositivos de tratamiento para uso personal,Subclase
+_06131,Productos auxiliares para la visión,Subclase
+_06133,Productos auxiliares para la movilidad y rutina diaria,Subclase
+_06219,Otros servicios preventivos,Subclase
+_06221,Servicios dentales preventivos,Subclase
+_06229,Otros servicios dentales ambulatorios,Subclase
+_06310,Servicios médicos y de rehabilitación de pacientes internos,Subclase
+_06411,Exámenes de laboratorio ,Subclase
+_06412,Exámenes de imagen y sonido ,Subclase
+_07111,Automotores nuevos,Subclase
+_07120,Motocicletas,Subclase
+_07130,Bicicletas,Subclase
+_07211,"Llantas, neumáticos",Subclase
+_07212,Partes para equipo de transporte personal,Subclase
+_07221,Diesel,Subclase
+_07222,Gasolina,Subclase
+_07224,Lubricantes,Subclase
+_07231,Mantenimiento y reparación de equipo de transporte personal,Subclase
+_07241,Servicios de parqueo,Subclase
+_07243,"Lecciones de manejo, exámenes, licencias y verificaciones de ",Subclase
+_07321,Transporte de pasajeros en bus y autocar,Subclase
+_07322,Transporte de pasajeros en taxi y carro de alquiler con chofer,Subclase
+_07323,Transporte de pasajeros para estudiantes a/desde la escuela,Subclase
+_07329,Otros transportes de pasajeros por carretera,Subclase
+_07332,"Transporte de pasajeros por aire, internacional",Subclase
+_07412,Servicios de mensajería y paquetería,Subclase
+_08120,Equipo de telefonía móvil,Subclase
+_08131,"Computadoras, laptops y tablets",Subclase
+_08132,Equipo periférico y sus componentes,Subclase
+_08140,"Equipo para la recepción, grabación y reproducción de sonido y vídeo",Subclase
+_08192,Otros accesorios de información y comunicación,Subclase
+_08310,Servicios de comunicación fijos,Subclase
+_08320,Servicios de comunicación móviles,Subclase
+_08330,Servicios de provisión de acceso a Internet y almacenamiento en la red,Subclase
+_08340,Servicios de paquetes de telecomunicación,Subclase
+_08350,Reparación y renta de equipo de información y comunicación,Subclase
+_08392,Licencias y derechos de TV y radio,Subclase
+_09211,"Videojuegos para computadoras, juegos de consola, aplicaciones de juegos y software",Subclase
+_09212,"Otros juegos, juguetes y pasatiempos",Subclase
+_09221,Equipo deportivo,Subclase
+_09312,"Plantas, semillas y flores",Subclase
+_09321,Compra de mascotas,Subclase
+_09450,Veterinaria y otros servicios para mascotas,Subclase
+_09462,Servicios deportivos - práctica,Subclase
+_09610,"Servicios provistos por cines, teatros y auditorios",Subclase
+_09711,Libros educativos y de texto,Subclase
+_09719,Otros libros,Subclase
+_09721,Diarios,Subclase
+_09740,Papelería y material de dibujo,Subclase
+_09800,Paquetes vacacionales,Subclase
+_10101,Educación temprana,Subclase
+_10102,Educación primaria,Subclase
+_10200,Educación secundaria,Subclase
+_10400,Educación terciaria,Subclase
+_10501,Tutorías,Subclase
+_10509,Otra educación no definida por nivel,Subclase
+_11111,Comidas con servicio completo ,Subclase
+_11112,Comidas sin servicio completo ,Subclase
+_11201,"Hoteles, moteles y similares",Subclase
+_12110,Seguro de vida y accidentes,Subclase
+_12120,Seguros relacionados a la salud,Subclase
+_12141,Seguros de transporte personal,Subclase
+_12210,Servicios de intermediación financiera medidos de forma indirecta,Subclase
+_12299,Otros servicios financieros N.C.P,Subclase
+_13111,Aparatos eléctricos para cuidado personal,Subclase
+_13120,"Otros aparatos, artículos y productos de cuidado personal",Subclase
+_13131,Peluquería,Subclase
+_13132,Tratamientos de aseo personal,Subclase
+_13211,Joyería y relojes,Subclase
+_13291,Artículos de viaje y artículos para bebés y otros efectos personales n.p.c.,Subclase
+_13909,Otros servicios (no clasificado en otra parte),Subclase
+_0111,Cereales y productos de cereales (ND),Clase
+_0112,"Animales vivos, carne y otras partes de animales terrestres sacrificados (ND)",Clase
+_0113,Pescados y otros mariscos (ND),Clase
+_0114,"Leche, otros productos lácteos y huevos (ND)",Clase
+_0115,Aceites y grasas (ND),Clase
+_0116,Frutas y nueces (ND),Clase
+_0117,"Vegetales, tubérculos, plátanos, bananos y legumbres de cocción (ND)",Clase
+_0118,"Azúcar, confitería y postres (ND)",Clase
+_0119,Alimentos preparados y otros productos alimenticios N.E.C.,Clase
+_0121,Jugos de frutas y verduras (ND),Clase
+_0122,Café y sustitutos de café (ND),Clase
+_0123,"Té, mate y otros productos vegetales para infusión (ND)",Clase
+_0125,Agua (ND),Clase
+_0126,Gaseosas (ND),Clase
+_0129,Otras bebidas no alcohólicas (ND),Clase
+_0130,Servicios para procesar bienes primarios para alimentos y bebidas no alcohólicas,Clase
+_0211,Alcohol (bebidas alcohólicas) y licores,Clase
+_0213,Cerveza,Clase
+_0230,Tabaco,Clase
+_0311,Materiales de confección ,Clase
+_0312,Prendas de vestir,Clase
+_0313,Otras prendas y accesorios de vestir,Clase
+_0314,"Limpieza, reparación, confección y alquiler de ropa",Clase
+_0321,Zapatos y otros calzados,Clase
+_0411,Alquiler efectivo de vivienda,Clase
+_0431,Equipo de seguridad y materiales para el mantenimiento y reparación de viviendas,Clase
+_0432,"Servicios de mantenimiento, reparación y seguridad de viviendas",Clase
+_0441,Suministro de agua,Clase
+_0442,Recolección de basura,Clase
+_0451,Electricidad,Clase
+_0452,Gas,Clase
+_0454,Combustibles sólidos,Clase
+_0511,"Muebles, mobiliario y alfombras",Clase
+_0521,Textiles para el hogar,Clase
+_0531,Electrodomésticos principales,Clase
+_0532,Electrodomésticos pequeños,Clase
+_0540,"Cristalería, vajillas y utensilios domésticos",Clase
+_0551,Herramientas y equipos motorizados,Clase
+_0552,Herramientas no motorizadas y accesorios varios,Clase
+_0561,Artículos domésticos no duraderos,Clase
+_0562,Servicios domésticos,Clase
+_0611,Medicinas,Clase
+_0612,Productos médicos,Clase
+_0613,Productos auxiliares,Clase
+_0621,Servicios de cuidado preventivo,Clase
+_0622,Servicios dentales ambulatorios,Clase
+_0631,Servicios médicos y de rehabilitación de pacientes internos,Clase
+_0641,Servicios de diagnóstico por imágenes y laboratorio médico,Clase
+_0711,Automotores,Clase
+_0712,Motocicletas,Clase
+_0713,Bicicletas,Clase
+_0721,Partes y accesorios para equipo de transporte personal,Clase
+_0722,Combustibles y lubricantes para equipo de transporte personal,Clase
+_0723,Mantenimiento y reparación de equipo de transporte personal,Clase
+_0724,Otros servicios con respecto al equipo de transporte personal ,Clase
+_0732,Transporte de pasajeros por carretera,Clase
+_0733,Transporte de pasajeros por aire,Clase
+_0741,Servicios postales y mensajería,Clase
+_0812,Equipo de telefonía móvil,Clase
+_0813,Equipo de procesamiento de información,Clase
+_0814,"Equipo para la recepción, grabación y reproducción de sonido y vídeo",Clase
+_0819,Otros equipos y accesorios de información y comunicación,Clase
+_0831,Servicios de comunicación fijos,Clase
+_0832,Servicios de comunicación móviles,Clase
+_0833,Servicios de provisión de acceso a Internet y almacenamiento en la red ,Clase
+_0834,Servicios de paquetes de telecomunicación,Clase
+_0835,Reparación y renta de equipo de información y comunicación,Clase
+_0839,Otros servicios de información y comunicación,Clase
+_0921,"Juegos, juguetes y pasatiempos",Clase
+_0922,"Equipo deportivo, de camping y para actividades al aire libre",Clase
+_0931,"Productos de jardinería, plantas y flores",Clase
+_0932,Mascotas y productos para mascotas,Clase
+_0945,Veterinaria y otros servicios para mascotas,Clase
+_0946,Servicios recreativos y deportivos,Clase
+_0961,"Servicios provistos por cines, teatros y auditorios",Clase
+_0971,Libros,Clase
+_0972,Diarios y periódicos,Clase
+_0974,Papelería y material de dibujo,Clase
+_0980,Paquetes vacacionales,Clase
+_1010,Educación temprana y primaria,Clase
+_1020,Educación secundaria,Clase
+_1040,Educación terciaria,Clase
+_1050,Educación no definida por nivel,Clase
+_1111,"Restaurantes, cafés y similares",Clase
+_1120,Servicios de Alojamiento,Clase
+_1211,Seguro de vida y accidentes,Clase
+_1212,Seguros relacionados a la salud,Clase
+_1214,Seguros relacionados al transporte,Clase
+_1221,Servicios de intermediación financiera medidos de forma indirecta,Clase
+_1229,Otros servicios financieros,Clase
+_1311,Aparatos eléctricos para cuidado personal,Clase
+_1312,"Otros aparatos, artículos y productos de cuidado personal",Clase
+_1313,Peluquería y establecimientos para aseo personal,Clase
+_1321,Joyería y relojes,Clase
+_1329,Otros objetos personales ,Clase
+_1390,Otros servicios,Clase
+_011,ALIMENTOS,Grupo
+_012,BEBIDAS NO ALCOHÓLICAS,Grupo
+_013,SERVICIOS PARA PROCESAR BIENES PRIMARIOS PARA ALIMENTOS Y BEBIDAS NO ALCOHÓLICAS,Grupo
+_021,BEBIDAS ALCOHÓLICAS,Grupo
+_023,TABACO,Grupo
+_031,ROPA,Grupo
+_032,CALZADO,Grupo
+_041,ALQUILER DE VIVIENDA,Grupo
+_043,"MANTENIMIENTO, REPARACIÓN Y SEGURIDAD DE VIVIENDAS",Grupo
+_044,SUMINISTRO DE AGUA Y OTROS SERVICIOS RELACIONADOS CON VIVIENDA,Grupo
+_045,"ELECTRICIDAD, GAS Y OTROS COMBUSTIBLES",Grupo
+_051,"MUEBLES, MOBILIARIO Y ALFOMBRAS",Grupo
+_052,TEXTILES PARA EL HOGAR,Grupo
+_053,ELECTRODOMÉSTICOS,Grupo
+_054,"CRISTALERÍAS, VAJILLAS Y UTENSILIOS DOMÉSTICOS",Grupo
+_055,HERRAMIENTAS Y EQUIPOS PARA LA CASA Y EL JARDÍN,Grupo
+_056,BIENES Y SERVICIOS PARA EL MANTENIMIENTO DIARIO DEL HOGAR,Grupo
+_061,MEDICINAS Y PRODUCTOS DE LA SALUD,Grupo
+_062,SERVICIOS DE CUIDADOS AMBULATORIOS/EXTERNO,Grupo
+_063,SERVICIOS DE CUIDADOS INTERNOS,Grupo
+_064,OTROS SERVICIOS DE SALUD,Grupo
+_071,COMPRA DE VEHÍCULOS,Grupo
+_072,OPERACIÓN DE EQUIPO PERSONAL DE TRANSPORTE,Grupo
+_073,SERVICIOS DE TRANSPORTE DE PASAJEROS,Grupo
+_074,SERVICIOS DE TRANSPORTE DE BIENES,Grupo
+_081,EQUIPO DE INFORMACIÓN Y COMUNICACIÓN,Grupo
+_083,SERVICIOS DE INFORMACIÓN Y COMUNICACIÓN,Grupo
+_092,OTROS BIENES RECREATIVOS,Grupo
+_093,PRODUCTOS DE JARDÍN Y MASCOTAS,Grupo
+_094,SERVICIOS RECREATIVOS,Grupo
+_096,SERVICIOS CULTURALES,Grupo
+_097,"DIARIOS, LIBROS Y PAPELERÍA",Grupo
+_098,PAQUETES VACACIONALES,Grupo
+_101,EDUCACIÓN TEMPRANA Y PRIMARIA,Grupo
+_102,EDUCACIÓN SECUNDARIA,Grupo
+_104,EDUCACIÓN TERCIARIA (EDUCACIÓN SUPERIOR),Grupo
+_105,EDUCACIÓN NO DEFINIDA POR NIVEL,Grupo
+_111,SERVICIOS DE COMIDA Y SERVICIO DE BEBIDAS,Grupo
+_112,SERVICIOS DE ALOJAMIENTO,Grupo
+_121,SEGUROS,Grupo
+_122,SERVICIOS FINANCIEROS,Grupo
+_131,CUIDADO PERSONAL,Grupo
+_132,OTROS OBJETOS PERSONALES,Grupo
+_139,OTROS SERVICIOS,Grupo
+_01,ALIMENTOS Y BEBIDAS NO ALCOHÓLICAS,División
+_02,"BEBIDAS ALCOHÓLICAS, TABACO Y NARCÓTICOS",División
+_03,ROPA Y CALZADO,División
+_04,"VIVIENDA, AGUA, ELECTRICIDAD, GAS Y OTROS",División
+_05,"MOBILIARIO, EQUIPO Y MANTENIMIENTO DEL HOGAR",División
+_06,SALUD,División
+_07,TRANSPORTE,División
+_08,INFORMACIÓN Y COMUNICACIÓN,División
+_09,"RECREACIÓN, DEPORTE Y CULTURA",División
+_10,SERVICIOS EDUCATIVOS,División
+_11,RESTAURANTES Y SERVICIOS DE ALOJAMIENTO,División
+_12,SEGUROS Y SERVICIOS FINANCIEROS,División
+_13,"CUIDADO PERSONAL, PROTECCIÓN SOCIAL Y BIENES Y SERVICIOS VARIOS",División

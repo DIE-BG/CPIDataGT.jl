@@ -47,6 +47,21 @@ gtdata_64_exp = UniformCountryStructure(var_gt00_64, var_gt10_64, var_gt23_64)
 
 @info "Successful construction of data structures" gtdata_32 gtdata_64
 
+## Build the hierarchical IPC tree Base 2023
+groups23 = CSV.read(datadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
+
+cpi_23_tree_32 = CPITree(
+    base = full_gt23_32, 
+    groupsdf = groups23,
+    characters = (3, 4, 5, 6, 8),
+)
+
+cpi_23_tree_64 = CPITree(
+    base = full_gt23_64, 
+    groupsdf = groups23,
+    characters = (3, 4, 5, 6, 8),
+)
+
 ## Build the hierarchical IPC tree Base 2010
 groups10 = CSV.read(datadir("Guatemala_IPC_2010_Groups.csv"), DataFrame)
 
@@ -95,7 +110,8 @@ jldsave(datadir("gtdata32.jld2");
     gtdata_exp = gtdata_32_exp,
     # Hierarchical trees
     cpi_00_tree = cpi_00_tree_32, 
-    cpi_10_tree = cpi_10_tree_32
+    cpi_10_tree = cpi_10_tree_32,
+    cpi_23_tree = cpi_23_tree_32,
 )
 
 jldsave(datadir("gtdata64.jld2"); 
@@ -112,7 +128,8 @@ jldsave(datadir("gtdata64.jld2");
     gtdata_exp = gtdata_64_exp,
     # Hierarchical trees
     cpi_00_tree = cpi_00_tree_64, 
-    cpi_10_tree = cpi_10_tree_64
+    cpi_10_tree = cpi_10_tree_64,
+    cpi_23_tree = cpi_23_tree_64,
 )
 
 # Original DataFrames
