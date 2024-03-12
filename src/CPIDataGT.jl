@@ -48,7 +48,8 @@ module CPIDataGT
         global MAIN_DATAFILE = newdatadir("gtdata32.jld2")
         global DOUBLE_DATAFILE = newdatadir("gtdata64.jld2")
         global DATAFRAMES_FILE = newdatadir("gtdataframes.jld2")
-        @info "Use `CPIDataGT.load_data()`, `.load_tree_data()` or `.load_dataframes()`"
+        @info "Use load functions `CPIDataGT.load_data()`, `.load_tree_data()` or `.load_dataframes()`."
+        @info "Use `CPIDataGT.update_data()` to get the most recent data."
 
     end
 
@@ -124,6 +125,7 @@ module CPIDataGT
         download(CPI2023_GROUPS_URL, newdatadir("Guatemala_IPC_2023_Groups.csv"))
         download(CPI2023_INDEX_URL, newdatadir("Guatemala_IPC_2023.csv"))
         @info "Download complete."
+        build_data()
     end
 
     """
