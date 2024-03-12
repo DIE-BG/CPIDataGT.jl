@@ -6,9 +6,6 @@ module CPIDataGT
     @reexport using Dates
     @reexport using CPIDataBase
 
-    # JLD files directory (filled by Scratch)
-    JLD_DIRECTORY = ""
-
     # This package provides a function to load Guatemala's CPI dataset using the
     # infrastructure from CPIDataBase.
 
@@ -30,20 +27,27 @@ module CPIDataGT
     export DF_CPI_00, DF_CPI_10, DF_CPI_23
 
     ## Functions to build and load data 
-    export build_data
     export load_data, load_tree_data, load_dataframes
 
     ## Paths 
     PROJECT_ROOT = pkgdir(@__MODULE__)
-    datadir(file) = joinpath(JLD_DIRECTORY, file)
+    # JLD files directory (filled by Scratch)
+    JLD_DIRECTORY = ""
+    # URLs to download 2023 data
+    include("CPI2023_urls.jl")
+
+    # Access non-changing CSV files
+    datadir(file) = joinpath(PROJECT_ROOT, "data", file)
+    # Access CPI 2023 changing CSV files
+    newdatadir(file) = joinpath(JLD_DIRECTORY, file)
 
     # Initialization
     function __init__()
         # Fill directory path for JLD files
         global JLD_DIRECTORY = @get_scratch!("data")
-        global MAIN_DATAFILE = datadir("gtdata32.jld2")
-        global DOUBLE_DATAFILE = datadir("gtdata64.jld2")
-        global DATAFRAMES_FILE = datadir("gtdataframes.jld2")
+        global MAIN_DATAFILE = newdatadir("gtdata32.jld2")
+        global DOUBLE_DATAFILE = newdatadir("gtdata64.jld2")
+        global DATAFRAMES_FILE = newdatadir("gtdataframes.jld2")
         @info "Use `CPIDataGT.load_data()`, `.load_tree_data()` or `.load_dataframes()`"
 
     end
@@ -110,13 +114,24 @@ module CPIDataGT
     end
 
 
+    """ 
+        update_data()
+    Downloads CSV files from Google Drive and updates the 2023 CPI data files.
+    """ 
+    function update_data() 
+        @info "Downloading 2023 CPI data..."
+        download(CPI2023_ITEMS_URL, newdatadir("Guatemala_GB_2023.csv"))
+        download(CPI2023_GROUPS_URL, newdatadir("Guatemala_IPC_2023_Groups.csv"))
+        download(CPI2023_INDEX_URL, newdatadir("Guatemala_IPC_2023.csv"))
+        @info "Download complete."
+    end
+
     """
         build_data()
 
     Builds the binary files from the CSV files.
     """
     function build_data()
-        datadir(file) = joinpath(PROJECT_ROOT, "data", file)
         @info "Loading CPI data from CSV files..."
 
         ## Loading data from CSV files
@@ -127,8 +142,10 @@ module CPIDataGT
         gt_base10 = CSV.read(datadir("Guatemala_IPC_2010.csv"), DataFrame, normalizenames=true)
         gt10gb = CSV.read(datadir("Guatemala_GB_2010.csv"), DataFrame, types=[String, String, Float64])
         # 2023 Base
-        gt_base23 = CSV.read(datadir("Guatemala_IPC_2023.csv"), DataFrame, normalizenames=true)
-        gt23gb = CSV.read(datadir("Guatemala_GB_2023.csv"), DataFrame, types=[String, String, Float64])
+        newdatafile = newdatadir("Guatemala_IPC_2023.csv")
+        isfile(newdatafile) || update_data()
+        gt_base23 = CSV.read(newdatafile, DataFrame, normalizenames=true)
+        gt23gb = CSV.read(newdatadir("Guatemala_GB_2023.csv"), DataFrame, types=[String, String, Float64])
         @info "Data successfully loaded from CSV files"
 
         ## Building data structures
@@ -161,7 +178,7 @@ module CPIDataGT
         @info "Successful building of data structures" GTDATA=gtdata_32 GTDATA23=gtdata_32_exp
 
         ## Build the hierarchical IPC tree Base 2023
-        groups23 = CSV.read(datadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
+        groups23 = CSV.read(newdatadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
 
         cpi_23_tree_32 = CPITree(
             base = full_gt23_32, 
