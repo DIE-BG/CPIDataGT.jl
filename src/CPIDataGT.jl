@@ -226,7 +226,7 @@ module CPIDataGT
         )
 
         ## Build the hierarchical IPC tree Base 2023
-        groups23 = CSV.read(newdatadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
+        groups23 = CSV.read(datadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
 
         cpi_23_tree_32 = CPITree(
             base = full_gt23_32, 
