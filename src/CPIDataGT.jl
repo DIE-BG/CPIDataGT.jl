@@ -38,7 +38,7 @@ module CPIDataGT
 
     # Access non-changing CSV files
     datadir(file) = joinpath(PROJECT_ROOT, "data", file)
-    # Access CPI 2023 changing CSV files
+    # Access CPI 2024 changing CSV files
     newdatadir(file) = joinpath(JLD_DIRECTORY, file)
 
     # Initialization
@@ -120,10 +120,10 @@ module CPIDataGT
     Downloads CSV files from Google Drive and updates the 2023 CPI data files.
     """ 
     function update_data() 
-        @info "Downloading 2023 CPI data..."
-        download(CPI2023_ITEMS_URL, newdatadir("Guatemala_GB_2023.csv"))
-        download(CPI2023_GROUPS_URL, newdatadir("Guatemala_IPC_2023_Groups.csv"))
-        download(CPI2023_INDEX_URL, newdatadir("Guatemala_IPC_2023.csv"))
+        @info "Downloading 2024 CPI data..."
+        download(CPI2024_ITEMS_URL, newdatadir("Guatemala_GB_2024.csv"))
+        download(CPI2024_GROUPS_URL, newdatadir("Guatemala_IPC_2024_Groups.csv"))
+        download(CPI2024_INDEX_URL, newdatadir("Guatemala_IPC_2024.csv"))
         @info "Download complete."
         build_data()
     end
@@ -143,12 +143,22 @@ module CPIDataGT
         # 2010 Base
         gt_base10 = CSV.read(datadir("Guatemala_IPC_2010.csv"), DataFrame, normalizenames=true)
         gt10gb = CSV.read(datadir("Guatemala_GB_2010.csv"), DataFrame, types=[String, String, Float64])
-        # 2023 Base
-        newdatafile = newdatadir("Guatemala_IPC_2023.csv")
+        # 2024 Base
+        newdatafile = newdatadir("Guatemala_IPC_2024.csv")
         isfile(newdatafile) || update_data()
         gt_base23 = CSV.read(newdatafile, DataFrame, normalizenames=true)
-        gt23gb = CSV.read(newdatadir("Guatemala_GB_2023.csv"), DataFrame, types=[String, String, Float64])
+        gt23gb = CSV.read(newdatadir("Guatemala_GB_2024.csv"), DataFrame, types=[String, String, Float64])
         @info "Data successfully loaded from CSV files"
+
+        # Fix to handle different base indexes in 2024 CPI base:
+        #   Rebase individual indexes for the base period index to be 100.0
+        #   Need to force first row of the DataFrame to be = 100.0 due to imprecision of operations
+        #   This issue needs to be handled properly in CPIDataBase.jl 
+        matdata = gt_base23[:, 2:end] |> Matrix
+        newdata = 100 * matdata ./ reshape(matdata[1, :], 1, :)
+        gt_base23_mod = copy(gt_base23)
+        gt_base23_mod[:, 2:end] .= newdata
+        gt_base23_mod[1, 2:end] .= 100.0
 
         ## Building data structures
         # 2000 Base
@@ -164,7 +174,7 @@ module CPIDataGT
         var_gt10_32 = VarCPIBase(full_gt10_32)
 
         # 2023 Base
-        full_gt23_64 = FullCPIBase(gt_base23, gt23gb)
+        full_gt23_64 = FullCPIBase(gt_base23_mod, gt23gb)
         full_gt23_32 = convert(Float32, full_gt23_64)
         var_gt23_64 = VarCPIBase(full_gt23_64)
         var_gt23_32 = VarCPIBase(full_gt23_32)
@@ -180,7 +190,7 @@ module CPIDataGT
         @info "Successful building of data structures" GTDATA=gtdata_32 GTDATA23=gtdata_32_exp
 
         ## Build the hierarchical IPC tree Base 2023
-        groups23 = CSV.read(newdatadir("Guatemala_IPC_2023_Groups.csv"), DataFrame)
+        groups23 = CSV.read(newdatadir("Guatemala_IPC_2024_Groups.csv"), DataFrame)
 
         cpi_23_tree_32 = CPITree(
             base = full_gt23_32, 
