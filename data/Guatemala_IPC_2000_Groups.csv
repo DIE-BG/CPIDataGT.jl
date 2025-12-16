@@ -66,7 +66,7 @@ _021121,"Camisas, blusas, playeras, camisetas y similares para niños menores de
 _021131,Vestidos y faldas para niñas menores de 3 años,Gasto básico
 _021141,"Calzoncillos, calzones, pantaletas y similares para niños menores de 3 años",Gasto básico
 _021142,"Calcetines, medias y similares para niños menores de 3 años",Gasto básico
-_021151,Otras prendas de vestir paa niños menores de 3 años,Gasto básico
+_021151,Otras prendas de vestir para niños menores de 3 años,Gasto básico
 _021161,Prendas de vestir y accesorios diversos para bebés,Gasto básico
 _021211,"Pantalones, overoles para niños de 3 a 10 años",Gasto básico
 _021221,"Camisas, blusas, playeras, camisetas y similares para niños de 3 a 10 años",Gasto básico
@@ -217,13 +217,260 @@ _092211,Cigarrillos con filtro,Gasto básico
 _093111,Gastos por seguros,Gasto básico
 _093121,Gastos por servicios funerarios,Gasto básico
 _094111,Gastos por servicios diversos para el hogar,Gasto básico
+_01111,Arroz,Subgrupo
+_01112,Pan,Subgrupo
+_01113,Pastas frescas y secas,Subgrupo
+_01114,"Productos de tortillería, pastelería y repostería",Subgrupo
+_01115,Cereales y maíaz,Subgrupo
+_01121,"Carne bovina fresca, refrigerada o congelada",Subgrupo
+_01122,"Carne de cerdo fresca, refrigerada o congelada",Subgrupo
+_01123,"Carne de aves fresca, refrigerada o congelada",Subgrupo
+_01124,"Embutidos frescos o refrigerados, menudencias",Subgrupo
+_01131,"Pescado fresco o seco, refrigerado o congelado, ahumano o salado",Subgrupo
+_01132,Mariscos frescos y/o refrigerados,Subgrupo
+_01133,"Pescados y mariscos elaborados, preservados y/o en conserva",Subgrupo
+_01141,"Leche líquida fresca, descremada, pasteurizada o esterilizada y leche preservada, condensada, evaporada o en polvo",Subgrupo
+_01142,Queso,Subgrupo
+_01143,Otros productos lácteos,Subgrupo
+_01144,Huevos,Subgrupo
+_01151,Aceites y vegetales,Subgrupo
+_01152,Margarinas y otras grasas,Subgrupo
+_01161,Frutas frescas,Subgrupo
+_01162,Frutas secas o en conserva,Subgrupo
+_01171,Verduras y hortalizas,Subgrupo
+_01172,Legumbres o leguminosas,Subgrupo
+_01173,Tuberosas frescas,Subgrupo
+_01174,Hierbas culinarias,Subgrupo
+_01181,Azúcar,Subgrupo
+_01182,"Mermeladas, compotas, gelatinas y jaleas",Subgrupo
+_01183,Productos de confitería,Subgrupo
+_01184,"Granizadas, helados de hielo y de leche",Subgrupo
+_01191,Café,Subgrupo
+_01192,Salsas y condimentos,Subgrupo
+_01193,"Especias, aderezos y productos aromáticos",Subgrupo
+_01194,Levadura preparación de postres y sopas,Subgrupo
+_01195,Otros productos alimenticios no clasificados en otro subgrupo unitario,Subgrupo
+_01211,Agua,Subgrupo
+_01212,Bebidas gaseosas,Subgrupo
+_01213,Jugos y refrescos,Subgrupo
+_01221,Comidas preparadas para llevar a domicilio,Subgrupo
+_01222,"Almuerzo, desayuno y refacciones",Subgrupo
+_01223,"Golosinas, productos sintéticos y otras comidas preparadas fuera del hogar",Subgrupo
+_02111,Pantalones y overoles para niños menores de 3 años.,Subgrupo
+_02112,"Camisas, blusas, playeras, camisetas y similares para niños menores de 3 años",Subgrupo
+_02113,Vestidos y faldas para niñas menores de 3 años,Subgrupo
+_02114,Ropa interior para niños menores de 3 años,Subgrupo
+_02115,Otras prendas de vestir para niños menores de 3 años,Subgrupo
+_02116,Prendas de vestir y accesorios diversos para bebés,Subgrupo
+_02121,"Pantalones, overoles para niños de 3 a 10 años",Subgrupo
+_02122,"Camisas, blusas, playeras, camisetas y similares para niños de 3 a 10 años",Subgrupo
+_02123,Vestidos y faldas para niñas de 3 a 10 años,Subgrupo
+_02124,Ropa interior para niños de 3 a 10 años,Subgrupo
+_02125,Otras prendas de vestir para niños de 3 a 10 años,Subgrupo
+_02131,Pantalones y overoles para hombres mayores de 10 años,Subgrupo
+_02132,Camisas para hombres mayores de 10 años,Subgrupo
+_02133,Playeras y camisetas para hombres mayores de 10 años,Subgrupo
+_02134,Ropa interior para hombres mayores de 10 años,Subgrupo
+_02135,Otras prendas de vestir n.e.o.g para hombres mayores de 10 años,Subgrupo
+_02141,Vestidos para mujeres mayores de 10 años de edad,Subgrupo
+_02142,"Blusas, camisas y camisetas para maujeres mayores de 10 años",Subgrupo
+_02143,Pantalones y faldas para mujeres mayores de 10 años,Subgrupo
+_02144,Ropa interior para mujeres de 10 años de edad,Subgrupo
+_02145,Otras prendas de vestir n.e.o.g. para mujeres mayores de 10 años,Subgrupo
+_02146,Confeción y arreglo de ropa para mujeres mayores de 10 años de edad,Subgrupo
+_02151,Telas de toda clase,Subgrupo
+_02152,"Hilos, lanas y accesorios para costura y tejido",Subgrupo
+_02211,Zapatos y otros tipos de calzado para niños menores de 3 años,Subgrupo
+_02212,Zapatos y otros tipos de calzado para niños menores de 3 años,Subgrupo
+_02213,Zapatos y otros tipos de calzado para hombres mayores de 10 años,Subgrupo
+_02214,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,Subgrupo
+_03111,Alquileres reales de vivienda,Subgrupo
+_03211,"Materiales, productos y accesorios de reparación y servicios de vivienda",Subgrupo
+_03221,Servicios de mantenimiento y reparaciones regulares de la vivienda,Subgrupo
+_03311,Gastos derivados del servicio de agua domiciliaria,Subgrupo
+_03312,Gastos derivados del servicio de electricidad,Subgrupo
+_03313,Gastos derivados del gas manufacturado y natural y gases licuados del petróleo,Subgrupo
+_03314,"Gastos por consumo de aceites domésticos para calentar y aceites para lámparas, combustibles de uso doméstico y accesorios de alumbrado",Subgrupo
+_03315,"Gastos por recolección de desechos domésticos, barrido y descarga de afluentes",Subgrupo
+_04111,Juegos de sala,Subgrupo
+_04112,Muebles de comedor,Subgrupo
+_04113,Muebles de dormitorio,Subgrupo
+_04114,Muebles de cocina,Subgrupo
+_04115,Otros muebles del hogar,Subgrupo
+_04121,Alfombras y otras cubiertas para pisos,Subgrupo
+_04122,Equipos de iluminación (lámparas),Subgrupo
+_04123,Objetos decorativos,Subgrupo
+_04211,Tejidos y textiles para el hogar,Subgrupo
+_04212,"Colchones, sábanas y otros artículos similares para el hogar",Subgrupo
+_04311,Aparatos eléctricos para preservar alimentos,Subgrupo
+_04312,Estufas a gas,Subgrupo
+_04313,Aparatos elécticos para acondicionamiento del hogar,Subgrupo
+_04314,Aparatos eléctricos para aseo del hogar,Subgrupo
+_04315,Aparatos para uso del hogar,Subgrupo
+_04411,"Artículos de cristalería, vidriería y vajillas",Subgrupo
+_04412,"Cuchillería, cubiertos y utensilios de mesa",Subgrupo
+_04413,Utensilios y artículos par ala cocina y uso doméstico,Subgrupo
+_04511,Herramientas y equipos para la casa y el jardín,Subgrupo
+_04611,Articulos de limpieza para el hogar,Subgrupo
+_04612,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",Subgrupo
+_04613,Artículos para limpieza,Subgrupo
+_04621,Servicios para el mantenimiento rutinario del hogar,Subgrupo
+_05111,"Productos naturales y medicamentos farmaceúticos ",Subgrupo
+_05112,Productos naturlaes y mediamentos farmacéuticos para el sistema digestivo,Subgrupo
+_05113,Productos naturales y medicamentos dermatológicos e inmunológicos,Subgrupo
+_05114,Productos naturales y medicamentos farmacéuticos para el sistema nervioso,Subgrupo
+_05115,Productos para el sistema cardiovascular y respiratorio,Subgrupo
+_05115,"Productos antitusígenos, broncodilatadores y descongestivos para el sistema respiratorio",Subgrupo
+_05116,Otros productos naturales y medicamentos farmacéutico no especificados en otro subgrupo,Subgrupo
+_05121,Anteojos correctores y lentes de contacto,Subgrupo
+_05211,Servicios básicos de hospitales,Subgrupo
+_05212,Servicios médicos,Subgrupo
+_05213,Otros servicios médicos y paramédicos,Subgrupo
+_06111,Automóviles,Subgrupo
+_06112,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),Subgrupo
+_06121,Repuestos y accesorios para vehículos personales,Subgrupo
+_06122,Reparación y mantenimento de vehículos personales,Subgrupo
+_06123,Gasolina,Subgrupo
+_06131,Transporte extraurbano,Subgrupo
+_06132,Transporte urbano,Subgrupo
+_06133,Transporte aéreo,Subgrupo
+_06211,Servicio de correo,Subgrupo
+_06221,Compra de quipo telefónico y de telefax,Subgrupo
+_06231,Servicios de telefonía,Subgrupo
+_07111,Equipos de sonido,Subgrupo
+_07112,Televisores,Subgrupo
+_07113,Equipos para procesamiento de datos,Subgrupo
+_07114,"Medios para la grabación de audio, video y fotografía",Subgrupo
+_07115,"Reparación y/o mantenimiento de equipos para la recepción grabación y reproducción de imagen, equipos fotográficos y ópticos",Subgrupo
+_07211,Instrumentos musicales,Subgrupo
+_07311,"Juegos y juguetes de plástico, hule o materiales similares",Subgrupo
+_07312,Juegos y juguetes de metal o materiales similares,Subgrupo
+_07313,Juegos y juguetes de otro tipo de material no clasificado en otro subgrupo,Subgrupo
+_07411,"Equipos, artículos y accesorios para deportes",Subgrupo
+_07412,Ropa y calzado para deportes,Subgrupo
+_07511,"Gastos por ingreso a diferentes lugares, culturales, sociales y de esparcimiento",Subgrupo
+_07512,Televisón por cable,Subgrupo
+_07513,"Gastos por servicios sociales, fiestas y/o convivios familiares y no familiares",Subgrupo
+_07514,"Otros tipos de gastos por servicios sociales, culturales y recreativos",Subgrupo
+_07611,Gastos por suscripción y/o compra de revistas periódicos y similares,Subgrupo
+_07612,"Libros de texto y folletos no escolares, y demás material impreso diverso",Subgrupo
+_07711,Viajes de paseo y/o recreación dentro del país,Subgrupo
+_07712,Viajes de paseo y/o recreación fuera del país,Subgrupo
+_07811,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",Subgrupo
+_08111,Cuotas fijas y extraordinarias en la educaión preprimaria y primaria,Subgrupo
+_08112,Cuotas fijas y extraordinarios en la educación secundaria,Subgrupo
+_08113,Cuota mensual en educación superior,Subgrupo
+_08114,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",Subgrupo
+_08121,"Libros de texto, enciclopedias, atlas y diccionarios",Subgrupo
+_08122,Material y útiles de estudio de papel,Subgrupo
+_08123,Otros materiales y útiles de estudio,Subgrupo
+_08211,Transporte escolar,Subgrupo
+_08221,Uniforme escolar,Subgrupo
+_09111,Corte de cabello,Subgrupo
+_09112,Aparatos y accesorios para el cuidado personal,Subgrupo
+_09113,Articulos de limpieza para el cuerpo,Subgrupo
+_09114,Productos de belleza y cuidado personal,Subgrupo
+_09115,Otros productos para el cuidado personal,Subgrupo
+_09116,Artículos de joyería y otros personales,Subgrupo
+_09211,Bebidas alcohólicas,Subgrupo
+_09221,Cigarrillos con filtro,Subgrupo
+_09311,Gastos por seguros,Subgrupo
+_09312,Gastos por servicios funerarios,Subgrupo
+_09411,Gastos por servicios diversos para el hogar,Subgrupo
+_0111,"Arroz, cereales, pastas y maíz",Grupo
+_0112,Carne y embutidos,Grupo
+_0113,Pescado y mariscos,Grupo
+_0114,Lácteos y huevos,Grupo
+_0115,Aceites y margarina vegetales,Grupo
+_0116,Frutas frescas,Grupo
+_0117,"Verduras, hortalizas y hierbas",Grupo
+_0118,Azúcar y confitería,Grupo
+_0119,"Granos, salsas, aderezos, condimentos y sopas",Grupo
+_0121,Bebidas no alcohólicas,Grupo
+_0122,Comidas preparadas,Grupo
+_0211,Ropa para bebés y menores de 3 años,Grupo
+_0212,Ropa para niños entre 3 y 10 años,Grupo
+_0213,Ropa para hombres mayores de 10 años,Grupo
+_0214,Ropa para mujeres mayores de 10 años,Grupo
+_0215,Telas e hilos de toda clase,Grupo
+_0221,"Zapatos y otros tipos de calzado ",Grupo
+_0311,Alquileres reales de vivienda,Grupo
+_0321,Materiales de mantenimiento y contrucción,Grupo
+_0322,Servicios de mantenimiento y reparaciones regulares de la vivienda,Grupo
+_0331,Gastos de servicios y consumo del hogar,Grupo
+_0411,Muebles del hogar,Grupo
+_0412,Objetos y telas decorativas,Grupo
+_0421,Tejidos y textiles para el hogar,Grupo
+_0431,Aparatos eléctricos para uso del hogar,Grupo
+_0441,Utensilios y artículos para uso doméstico,Grupo
+_0451,Herramientas y equipos para la casa y el jardín,Grupo
+_0461,Articulos y utensilios de limpieza para el hogar,Grupo
+_0462,Servicios para el mantenimiento rutinario del hogar,Grupo
+_0511,Productos naturales y medicamentos farmaceuticos,Grupo
+_0512,Anteojos correctores y lentes de contacto,Grupo
+_0521,Servicios de hospitales,Grupo
+_0611,Automóviles,Grupo
+_0612,Repuestos y artículos para vehículos personales,Grupo
+_0613,"Transporte urbano, extraurbano y aéreo",Grupo
+_0621,Servicio de correo,Grupo
+_0622,Compra de quipo telefónico y de telefax,Grupo
+_0623,Servicios de telefonía,Grupo
+_0711,Equipos de sonido y video,Grupo
+_0721,Instrumentos musicales,Grupo
+_0731,Juegos y juguetes,Grupo
+_0741,"Articulos, accesorios y ropa para deportes",Grupo
+_0751,"Gastos por ingreso a diferentes lugares, culturales, sociales y de esparcimiento",Grupo
+_0761,"Gastos por compra de revistas, libros y similares",Grupo
+_0771,Viajes de paseo y/o recreación dentro del país,Grupo
+_0781,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",Grupo
+_0811,Inscripcion y cuotas por educación,Grupo
+_0812,Materiales para estudio,Grupo
+_0821,Transporte escolar,Grupo
+_0822,Uniforme escolar,Grupo
+_0911,Productos para el cuidado personal,Grupo
+_0911,Artículos de joyería y otros personales,Grupo
+_0921,Bebidas alcohólicas,Grupo
+_0922,Cigarrillos con filtro,Grupo
+_0931,Gastos por seguros y servicios financieros,Grupo
+_0941,Gastos por servicios diversos para el hogar,Grupo
+_011,Comidas,Agrupación
+_012,Bebidas,Agrupación
+_021,Ropa y telas,Agrupación
+_022,Zapatos,Agrupación
+_031,Alquileres reales de vivienda,Agrupación
+_032,Materiales de construcción y mantenimiento,Agrupación
+_033,Gastos de vivienda y consumo,Agrupación
+_041,Amueblado del hogar,Agrupación
+_042,Tejidos y textiles para el hogar,Agrupación
+_043,Aparatos electricos para el hogar,Agrupación
+_044,Utensilios de cocina,Agrupación
+_045,Herramientas y equipos para la casa y el jardín,Agrupación
+_046,Productos de limpieza y mantenimiento,Agrupación
+_051,Productos y medicamentos farmaceúticos,Agrupación
+_052,Servicios  de hospitales,Agrupación
+_061,Automóviles,Agrupación
+_062,Servicio de correo y telefonía,Agrupación
+_071,Equipos de entretenimiento,Agrupación
+_072,Instrumentos musicales,Agrupación
+_073,"Juegos y juguetes ",Agrupación
+_074,"Articulos, accesorios y ropa para deportes",Agrupación
+_075,Gastos de esparcimiento,Agrupación
+_076,Gastos por libros,Agrupación
+_077,"Viajes de paseo y/o recreación ",Agrupación
+_078,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",Agrupación
+_081,Educación,Agrupación
+_082,Transporte y uniforme escolar,Agrupación
+_091,Cuidado personal,Agrupación
+_092,Bebidas Alcohólicas y cigarros,Agrupación
+_093,Gastos por seguros y servicios funerarios,Agrupación
+_094,Gastos por servicios diversos para el hogar,Agrupación
 _01,"Alimentos, bebidas no alcoholicas y comidas fuera del hogar",División
-_02,"Vestuario y calzado",División
+_02,Vestuario y calzado,División
 _03,"Vivienda, agua, electricidad, gas y otros combustibles",División
 _04,"Mobiliario, equipo de la vivienda y mantenimiento de rutina de la casa",División
-_05,"Salud",División
-_06,"Transporte y comunicaciones",División
-_07,"Recreacion y cultura",División
-_08,"Educacion",División
-_09,"Bienes y servicios diversos",División
+_05,Salud,División
+_06,Transporte y comunicaciones,División
+_07,Recreacion y cultura,División
+_08,Educacion,División
+_09,Bienes y servicios diversos,División
 _0,Índice general,General
