@@ -28,7 +28,7 @@ export DF_ITEMS_00, DF_ITEMS_10, DF_ITEMS_23, DF_ITEMS_24
 export DF_CPI_00, DF_CPI_10, DF_CPI_23, DF_CPI_24
 export CPIMATCH_10_23, CPIMATCH_00_23
 ## Functions to build and load data
-export load_data, load_tree_data, load_dataframes
+export load_data, load_tree_data, load_dataframes, load_matching
 
 
 export FullCPIMatch
@@ -52,7 +52,7 @@ function __init__()
     global MAIN_DATAFILE = newdatadir("gtdata32.jld2")
     global DOUBLE_DATAFILE = newdatadir("gtdata64.jld2")
     global DATAFRAMES_FILE = newdatadir("gtdataframes.jld2")
-    @info "Use load functions `CPIDataGT.load_data()`, `.load_tree_data()` or `.load_dataframes()`."
+    @info "Use load functions `CPIDataGT.load_data()`, `.load_tree_data()`, .load_matching() or `.load_dataframes()`."
     return @info "Use `CPIDataGT.update_data()` to get the most recent data."
 
 end

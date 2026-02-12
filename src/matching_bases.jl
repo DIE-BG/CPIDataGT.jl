@@ -90,7 +90,7 @@ function FullCPIMatch(df::DataFrame)
 end
 
 
-function show(io::IO, ::MIME"text/plain", m::FullCPIMatch)
+function show(io::IO, m::FullCPIMatch)
     table = hcat(
         m.code_source,
         m.name_source,
@@ -109,7 +109,7 @@ function show(io::IO, ::MIME"text/plain", m::FullCPIMatch)
         "w_source",
     ]
     println(io)
-    PrettyTables.pretty_table(
+    return PrettyTables.pretty_table(
         io, table;
         column_labels = header,
         vertical_crop_mode = :middle,
@@ -117,5 +117,9 @@ function show(io::IO, ::MIME"text/plain", m::FullCPIMatch)
         backend = :text,
         column_label_width_based_on_first_line_only = true,
     )
-    return println(io)
+end
+
+
+function Base.show(io::IO, m::FullCPIMatch)
+    return show(io, m)
 end
