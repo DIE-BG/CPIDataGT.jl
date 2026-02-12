@@ -1,0 +1,438 @@
+﻿code_b00,name_b00,w_b00,code_b23,name_b23,w_b23
+_011111,Arroz,0.483952,_0111101,Arroz,0.522366964
+_011151,Maíz,0.828818351,_0111102,Maíz,0.711087209
+_011153,Harina de maíz,0.09369807,_0111201,Harina de trigo,0.055904629
+_011153,Harina de maíz,0.09369807,_0111202,Harina de maíz,0.170135799
+_011153,Harina de maíz,0.09369807,_0111203,Harina para atoles,0.143783212
+_011121,Pan,2.826375997,_0111301,Pan,1.077537933
+_011121,Pan,2.826375997,_0111302,Pan dulce,1.069826458
+_011142,Productos de pastelería y repostería,0.307019002,_0111303,Galletas,0.146922489
+_011141,Productos de tortillería,1.691333999,_0111304,Tortillas,3.941692351
+_011142,Productos de pastelería y repostería,0.307019002,_0111305,Productos de panadería/pastelería,0.064805182
+_011142,Productos de pastelería y repostería,0.307019002,_0111306,Otros productos de panadería,0.174884548
+_011152,Otros cereales,0.547154,_0111401,Cereales de bolsa o caja,0.198206505
+_011152,Otros cereales,0.547154,_0111402,Avena/mosh,0.087811323
+_011131,Pastas frescas y secas,0.341395,_0111501,Espagueti,0.186721512
+_011131,Pastas frescas y secas,0.341395,_0111502,Fideos en todas sus formas (Excepto macarrones y espagueti),0.25338584
+_011131,Pastas frescas y secas,0.341395,_0111503,Chao mein,0.071823246
+_011231,"Carne de aves fresca, refrigerada o congelada",2.579463999,_0112101,"Pollos, gallinas y gallos vivos",0.036286131
+_011211,"Carne bovina fresca, refrigerada o congelada",3.401462999,_0112201,Carne fresca de res,2.455807926
+_011221,"Carne de cerdo fresca, refrigerada o congelada",0.448869999,_0112202,Carne fresca de cerdo,0.620050441
+_011231,"Carne de aves fresca, refrigerada o congelada",2.579463999,_0112203,Carne fresca de pollo,3.044390701
+_011231,"Carne de aves fresca, refrigerada o congelada",2.579463999,_0112401,Menudos de pollo,0.099730665
+_011211,"Carne bovina fresca, refrigerada o congelada",3.401462999,_0112402,Menudos de res,0.119783518
+_011241,"Embutidos frescos o refrigerados, menudencias",0.827546999,_0112501,Salchichas y productos similares de carne,0.307670364
+_011241,"Embutidos frescos o refrigerados, menudencias",0.827546999,_0112502,"Jamón (pollo, res, cerdo, mixto, etc.)",0.144916207
+_011241,"Embutidos frescos o refrigerados, menudencias",0.827546999,_0112503,Longanizas y chorizos (de todo tipo),0.2914781
+_011231,"Carne de aves fresca, refrigerada o congelada",2.579463999,_0112504,Medallones y milanesas de pollo,0.089201708
+_0112,Carnes y embutidos,7.257343996,_0112505,"Tortas de carne (pollo, res y cerdo)",0.054496632
+_011221,"Carne de cerdo fresca, refrigerada o congelada",0.448869999,_0112506,Carne de cerdo marinada,0.134718266
+_011311,"Pescado fresco o seco, refrigerado o congelado, ahumano o salado",0.273838998,_0113101,"Pescado entero, fresco, refrigerado o congelado",0.316853948
+_011331,"Pescados y mariscos elaborados, preservados y/o en conserva",0.037345,_0113201,Pescado seco,0.025935798
+_011331,"Pescados y mariscos elaborados, preservados y/o en conserva",0.037345,_0113301,Sardinas enlatadas,0.065723062
+_011321,Mariscos frescos y/o refrigerados,0.103932,_0113401,"Camarones frescos, refrigerados o congelados",0.104357402
+_011411,"Leche líquida fresca, descremada, pasteurizada o esterilizada y leche preservada, condensada, evaporada o en polvo",1.268167,_0114101,Leche líquida entera,0.210339765
+_011411,"Leche líquida fresca, descremada, pasteurizada o esterilizada y leche preservada, condensada, evaporada o en polvo",1.268167,_0114201,Leche líquida baja en grasas,0.026172417
+_011411,"Leche líquida fresca, descremada, pasteurizada o esterilizada y leche preservada, condensada, evaporada o en polvo",1.268167,_0114301,Leche en polvo,0.230939736
+_011431,Otros productos lácteos,0.524509,_0114302,Crema de leche,0.251114304
+_011421,Queso,0.615333,_0114501,Queso fresco,0.602041836
+_011421,Queso,0.615333,_0114502,Queso crema,0.030033955
+_011421,Queso,0.615333,_0114503,Queso mozzarella,0.023041984
+_011421,Queso,0.615333,_0114504,Queso seco,0.025616272
+_011431,Otros productos lácteos,0.524509,_0114601,Yogur industrializado,0.063217918
+_011431,Otros productos lácteos,0.524509,_0114701,Bebidas lácteas en base a leche liquida,0.062069377
+_011441,Huevos,1.402536999,_0114801,Huevos de gallina,2.097248496
+_011511,Aceites y vegetales,0.448788,_0115101,Aceite de origen vegetal,0.45970756
+_011521,Margarinas y otras grasas,0.139082,_0115301,Margarina vegetal regular,0.047279105
+_011611,Aguacates,0.153078,_0116101,Aguacates frescos,0.202591453
+_011612,Bananos o guineos,0.116945,_0116102,Bananos frescos,0.164186056
+_011615,Plátanos,0.173246,_0116103,Plátanos frescos,0.207385545
+_011616,Otras frutas frescas,0.593082001,_0116104,Mangos,0.048618702
+_011616,Otras frutas frescas,0.593082001,_0116105,Papayas frescas,0.094229329
+_011616,Otras frutas frescas,0.593082001,_0116106,Piñas frescas,0.076741366
+_011616,Otras frutas frescas,0.593082001,_0116201,Limones frescos,0.11024074
+_011614,Naranjas,0.097764,_0116202,Naranjas frescas,0.06547132
+_011613,Manzanas de cualquier variedad,0.093672,_0116301,Manzanas frescas,0.15197359
+_011616,Otras frutas frescas,0.593082001,_0116302,Duraznos,0.032950822
+_011616,Otras frutas frescas,0.593082001,_0116401,Fresas frescas,0.027152484
+_011616,Otras frutas frescas,0.593082001,_0116501,Uvas frescas,0.030489824
+_011616,Otras frutas frescas,0.593082001,_0116502,Melones frescos,0.041278002
+_011616,Otras frutas frescas,0.593082001,_0116503,Sandías frescas,0.087713861
+_011713,Otras verduras y hortalizas,0.494913002,_0117101,"Repollo, fresco o refrigerado",0.074410758
+_011713,Otras verduras y hortalizas,0.494913002,_0117102,Coliflor,0.045900399
+_011713,Otras verduras y hortalizas,0.494913002,_0117103,Brócoli,0.05403119
+_011713,Otras verduras y hortalizas,0.494913002,_0117104,Lechuga,0.05610702
+_011713,Otras verduras y hortalizas,0.494913002,_0117105,Apio,0.029391644
+_01174,Hierbas culinarias,0.15407,_0117106,Hierbas aromáticas para cocinar,0.07412784
+_011722,Otras legumbres o leguminosas,0.197185,_0117107,Pacaya,0.028307352
+_01174,Hierbas culinarias,0.15407,_0117108,Hierbas naturales para caldo,0.151750336
+_011734,Otras tuberosas frescas,0.084203,_0117109,Chipilín,0.029361083
+_011713,Otras verduras y hortalizas,0.494913002,_0117201,Chile pimiento fresco,0.079797548
+_011713,Otras verduras y hortalizas,0.494913002,_0117202,Pepinos frescos,0.079079773
+_011711,Tomate,0.736092,_0117203,Tomate fresco,0.948387032
+_011712,Güisquil,0.156626,_0117204,Güisquil,0.213201504
+_011713,Otras verduras y hortalizas,0.494913002,_0117205,Güicoy,0.03253763
+_011722,Otras legumbres o leguminosas,0.197185,_0117301,"Ejotes, frescos o refrigerados",0.116699484
+_011733,Zanahoria,0.119455,_0117401,Zanahorias,0.162099541
+_011734,Otras tuberosas frescas,0.084203,_0117402,Rábanos,0.039937504
+_011731,Cebolla,0.278086,_0117403,Cebollas,0.479584206
+_011722,Otras legumbres o leguminosas,0.197185,_0117404,Maíz verde (elote),0.063866984
+_011713,Otras verduras y hortalizas,0.494913002,_0117405,Verduras frescas o refrigeradas limpias y cortadas,0.040308218
+_011732,Papa o patata,0.369655,_0117501,Papas,0.599418309
+_011721,Frijol,1.175503,_0117601,"Frijoles negros, secos",0.840408956
+_011721,Frijol,1.175503,_0117602,"Frijoles colorados, secos",0.040192684
+_011721,Frijol,1.175503,_0117603,"Otros frijoles, secos (piloy, pinto, blanco, etc.)",0.064556892
+_011951,Otros productos alimenticios no clasificados en otro subgrupo unitario,0.257774,_0117901,Frijoles procesados y envasados,0.239252746
+_011811,Azúcar,1.009688,_0118101,Azúcar de caña,0.881035771
+_011821,"Mermeladas, compotas, gelatinas y jaleas",0.067571,_0118301,Miel,0.021043398
+_011821,"Mermeladas, compotas, gelatinas y jaleas",0.067571,_0118501,Pastilla de chocolate para hervir,0.050555485
+_011841,"Granizadas, helados de hielo y de leche",0.197633,_0118601,"Helado industrializado (base a leche, hielo, fruta, etc.)",0.075532458
+_011831,Productos de confitería,0.085297,_0118901,Otra confitería de azúcar y postres N.E.C. (No contiene cacao),0.040696279
+_011941,Levadura preparación de postres y sopas,0.300441998,_0119101,Sopas instantáneas,0.262391642
+_011951,Otros productos alimenticios no clasificados en otro subgrupo unitario,0.257774,_0119201,Alimentos para bebé,0.086587915
+_011931,Sal,0.04263,_0119301,Sal,0.043748879
+_011941,Levadura preparación de postres y sopas,0.300441998,_0119302,Consomé,0.121060079
+_011932,"Especias, aderezos y productos aromáticos",0.046087,_0119303,Sazonadores y ablandadores,0.026070707
+_011922,Salsa de tomate,0.103215,_0119304,Salsa de tomate,0.161134117
+_011923,Otras salsas y condimentos,0.062679,_0119305,Salsa tipo Kétchup,0.040000495
+_011921,Mayonesa,0.076211,_0119306,Mayonesa,0.089268071
+_011932,"Especias, aderezos y productos aromáticos",0.046087,_0119401,Chiles secos enteros y molidos,0.089266852
+_011941,Levadura preparación de postres y sopas,0.300441998,_0119901,Bases para sopas,0.153411009
+_011951,Otros productos alimenticios no clasificados en otro subgrupo unitario,0.257774,_0119902,Suplementos nutricionales,0.04502747
+_012231,"Golosinas, productos sintéticos y otras comidas preparadas fuera del hogar",0.19253,_0119903,"Snacks (excluye papalinas, plataninas, yucas, malangas, etc.)",0.222452377
+_011951,Otros productos alimenticios no clasificados en otro subgrupo unitario,0.257774,_0119904,Hojas para tamales,0.025721947
+_012131,Jugos,0.190757,_0121001,Jugos de frutas líquidos,0.347254663
+_01213,Jugos y Refrescos,0.346348,_0121002,Jugos de frutas en polvo,0.035891967
+_011911,Café,0.50097,_0122001,Café molido,0.169311991
+_011911,Café,0.50097,_0122002,Café instantáneo,0.24747433
+_01213,Jugos y Refrescos,0.346348,_0123001,Té de frutas y medicinales,0.045790226
+_012111,Agua,0.213939,_0125001,Agua purificada,0.385427472
+_012121,Bebidas gaseosas,1.035795,_0126001,Gaseosas,1.359286259
+_01213,Jugos y Refrescos,0.346348,_0129001,Bebidas hidratantes y energizantes,0.082856665
+_011154,Molienda de Maiz,0.121335579,_0130001,Servicio de molienda de maíz,0.382231577
+_092112,Otras bebidas alcohólicas,0.128002,_0211001,Aguardiente,0.16010849
+_092112,Otras bebidas alcohólicas,0.128002,_0211002,Whisky,0.158412716
+_092111,Cerveza,0.150705,_0213001,Cerveza (todo tipo),1.279360539
+_092211,Cigarrillos con filtro,0.11306,_0230101,Cigarros,0.409248429
+_021511,Telas de toda clase,0.492923997,_0311001,Tela para ropa uso diario,0.029936732
+_021351,Otras prendas de vestir n.e.o.g para hombres mayores de 10 años,0.343092,_0312101,Chumpas para hombres (mayores de 12 años),0.080875477
+_021351,Otras prendas de vestir n.e.o.g para hombres mayores de 10 años,0.343092,_0312102,Suéteres de algodón para hombres (mayores de 12 años),0.042765093
+_021321,Camisas para hombres mayores de 10 años,0.361296,_0312103,Camisas con botones para hombres (mayores de 12 años),0.159843055
+_021321,Camisas para hombres mayores de 10 años,0.361296,_0312104,Camisas tipo Polo para hombres (mayores de 12 años),0.053413369
+_021331,Playeras y camisetas para hombres mayores de 10 años,0.154365,_0312105,Playeras para hombres (mayores de 12 años),0.081313725
+_021311,Pantalones y overoles para hombres mayores de 10 años,0.819411,_0312106,Pantalones de vestir para hombres (mayores de 12 años),0.081219229
+_021311,Pantalones y overoles para hombres mayores de 10 años,0.819411,_0312107,Pantalones de lona para hombres (mayores de 12 años),0.463370006
+_0213,Ropa para hombres mayores de 10 años,1.846204,_0312108,Pantalones largos deportivo para hombres (mayores a 12 años),0.02369077
+_0213,Ropa para hombres mayores de 10 años,1.846204,_0312109,Pantalonetas deportivas para hombres (mayores de 12 años),0.025821086
+_021351,Otras prendas de vestir n.e.o.g para hombres mayores de 10 años,0.343092,_0312110,Trajes formales (incluye los trajes formales tradicionales) para hombres (mayores de 12 años),0.030984379
+_021341,Calzoncillos para hombres mayores de 10 años,0.089758,_0312111,Calzoncillos para hombres (mayores de 12 años),0.140596129
+_021342,"Calcetines, medias y similares para hombres mayores de 10 años",0.078282,_0312112,Calcetines para hombres (mayores de 12 años),0.089303449
+_021251,Otras prendas de vestir para niños de 3 a 10 años,0.11837,_0312201,Chumpas y chaquetas para niños (mayores de 2 y menores de 12 años),0.050184541
+_021221,"Camisas, blusas, playeras, camisetas y similares para niños de 3 a 10 años",0.111785,_0312202,Camisas de vestir para niños (mayores de 2 y menores de 12 años),0.059030307
+_021221,"Camisas, blusas, playeras, camisetas y similares para niños de 3 a 10 años",0.111785,_0312203,Playeras para niños (mayores de 2 y menores de 12 años),0.036551904
+_021211,"Pantalones, overoles para niños de 3 a 10 años",0.159199,_0312204,Pantalones de vestir para niños (mayores de 2 y menores de 12 años),0.032107855
+_021211,"Pantalones, overoles para niños de 3 a 10 años",0.159199,_0312205,Pantalones de lona para niños (mayores de 2 y menores de 12 años),0.172338229
+_021251,Otras prendas de vestir para niños de 3 a 10 años,0.11837,_0312206,Trajes formales (incluye los trajes formales tradicionales) para niños (mayores de 2 y menores de 12 años),0.0232959
+_021241,"Calzoncillos, calzones, pantaletas y similares para niños de 3 a 10 años",0.030159,_0312207,Calzoncillos para niños (mayores de 2 y menores de 12 años),0.050883623
+_021242,"Calcetines, media y similares para niños de 3 a 10 años",0.040727,_0312208,Calcetines para niños (mayores de 2 y menores de 12 años),0.036620238
+_021451,Otras prendas de vestir n.e.o.g. para mujeres mayores de 10 años,0.228764,_0312301,"Suéteres, mañaneras para mujeres (mayores de 12 años)",0.123572903
+_021421,"Blusas, camisas y camisetas para mujeres mayores de 10 años",0.424213,_0312302,Blusas formales para mujeres (mayores de 12 años),0.025409397
+_021421,"Blusas, camisas y camisetas para mujeres mayores de 10 años",0.424213,_0312303,Blusas casuales para mujeres (mayores de 12 años),0.205940262
+_021431,Pantalones y faldas para mujeres mayores de 10 años,0.441614,_0312304,Pantalones de vestir de tela para mujeres (mayores de 12 años),0.061909114
+_021431,Pantalones y faldas para mujeres mayores de 10 años,0.441614,_0312305,Pantalones de lona para mujeres (mayores de 12 años),0.247703321
+_021411,Vestidos para mujeres mayores de 10 años de edad,0.51771,_0312306,Vestidos formales y casuales para mujeres (mayores de 12 años),0.093302706
+_021411,Vestidos para mujeres mayores de 10 años de edad,0.51771,_0312307,Vestidos de fiesta para mujeres (mayores de 12 años),0.038473299
+_021431,Pantalones y faldas para mujeres mayores de 10 años,0.441614,_0312308,Faldas formales y casuales para mujeres (mayores de 12 años),0.058554075
+_0214,Ropa para mujeres mayores de 10 años ,2.114596999,_0312309,Traje tradicional para mujeres (mayores de 12 años),0.59147742
+_0214,Ropa para mujeres mayores de 10 años ,2.114596999,_0312310,Prenda tradicional para mujeres (mayores de 12 años),0.261719136
+_021441,"Brasieres, calzones, pantaletas, trajes de baño para mujeres de 10 años de edad",0.304756,_0312311,Calzones para mujeres (mayores de 12 años),0.184364895
+_021441,"Brasieres, calzones, pantaletas, trajes de baño para mujeres de 10 años de edad",0.304756,_0312312,Sostenes para mujeres (mayores de 12 años),0.163126674
+_021251,Otras prendas de vestir para niños de 3 a 10 años,0.11837,_0312401,"Suéteres, mañaneras para niñas (mayores de 2 y menores de 12 años)",0.033642995
+_021221,"Camisas, blusas, playeras, camisetas y similares para niños de 3 a 10 años",0.111785,_0312402,Blusas formales y casuales para niñas (mayores de 2 y menores de 12 años),0.068134358
+_021211,"Pantalones, overoles para niños de 3 a 10 años",0.159199,_0312403,Pantalones de lona para niñas (mayores de 2 y menores de 12 años),0.098489937
+_0212,Ropa para niños entre 3 y 10 años,0.549879,_0312404,Traje tradicional para niñas (mayores de 2 y menores de 12 años),0.085875479
+_0212,Ropa para niños entre 3 y 10 años,0.549879,_0312405,Prenda tradicional para niñas (mayores de 2 y menores de 12 años),0.030828734
+_021231,Vestidos y faldas para niñas de 3 a 10 años,0.089639,_0312406,Vestidos formales y casuales para niñas (mayores de 2 y menores de 12 años),0.068830985
+_021241,"Calzoncillos, calzones, pantaletas y similares para niños de 3 a 10 años",0.030159,_0312407,Calzones para niñas (mayores de 2 y menores de 12 años),0.04377868
+_021121,"Camisas, blusas, playeras, camisetas y similares para niños menores de 3 años",0.021722,_0312501,Camisas/blusas para bebés (menores de 2 años),0.041895244
+_021151,Otras prendas de vestir para niños menores de 3 años,0.053246,_0312502,"Chaquetas, suéteres, abrigos para bebés (menores de 2 años)",0.010993918
+_021111,Pantalones y overoles para niños menores de 3 años.,0.01637,_0312503,Pantalones para bebés (menores de 2 años),0.032822814
+_021161,Prendas de vestir y accesorios diversos para bebés,0.056918,_0312504,Mamelucos y bodys para bebés (menores de 2 años),0.057177038
+_082211,Uniforme escolar,0.055463,_0312601,Uniformes escolares en general,0.049726354
+_0213,Ropa para hombres mayores de 10 años,1.846204,_0313101,Cinchos,0.051246914
+_0213,Ropa para hombres mayores de 10 años,1.846204,_0313102,Gorras,0.065009408
+_021521,"Hilos, lanas y accesorios para costura y tejido",0.036849,_0313201,Hilos,0.023804373
+_046211,Servicios para el mantenimiento rutinario del hogar,2.562627976,_0314101,Lavado,0.048040044
+_022131,Zapatos y otros tipos de calzado para hombres mayores de 10 años,1.071372001,_0321101,Zapato acordonado para hombre,0.192649417
+_022131,Zapatos y otros tipos de calzado para hombres mayores de 10 años,1.071372001,_0321102,Zapato tipo mocasín para hombre,0.059300191
+_022131,Zapatos y otros tipos de calzado para hombres mayores de 10 años,1.071372001,_0321103,Botas y botines para hombre,0.098596844
+_022131,Zapatos y otros tipos de calzado para hombres mayores de 10 años,1.071372001,_0321104,Tenis (Zapatillas) para hombre,0.324069402
+_022131,Zapatos y otros tipos de calzado para hombres mayores de 10 años,1.071372001,_0321105,"Sandalias (chanclas, caites, pantuflas) para hombre",0.044184083
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321201,Zapatos casuales para mujer,0.037277742
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321202,Zapatos de tacón alto y bajo para mujer,0.190792768
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321203,Sandalias con o sin tacón para mujer,0.072290037
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321204,Botas o botines con y sin tacón para mujer,0.030938935
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321205,"Chanclas, caites, pantuflas para mujer",0.066473997
+_022141,Zapatos y otros tipos de calzado para mujeres mayores de 10 años,1.09241,_0321206,Tenis (Zapatillas) para mujer,0.190948411
+_022121,Zapatos y otros tipos de calzado para niños de 3 a 10 años,0.425416,_0321301,"Zapatos casuales (incluye sandalias, chanclas, caites y pantuflas) para niños (menores a 13 años)",0.018646773
+_022121,Zapatos y otros tipos de calzado para niños de 3 a 10 años,0.425416,_0321302,Zapatos escolares para niños (menores a 13 años),0.029522517
+_022121,Zapatos y otros tipos de calzado para niños de 3 a 10 años,0.425416,_0321303,Tenis (Zapatillas) para niños (menores a 13 años),0.07595598
+_031111,Alquileres reales de vivienda,3.879408998,_0411101,Alquiler de vivienda,2.563204553
+_032114,"Pinturas, brochas, barnices, diluyentes y todo lo relacionado con la pintura y decorado",0.054737,_0431101,Pintura (de agua o aceite),0.027827208
+_032111,"Materiales de tierra piedra, cemento, barro y similares",0.023521,_0431102,Cemento,0.256606899
+_032111,"Materiales de tierra piedra, cemento, barro y similares",0.023521,_0431103,Cal,0.150994521
+_032111,"Materiales de tierra piedra, cemento, barro y similares",0.023521,_0431104,Block,0.165548144
+_032113,"Materiales, productos y accesorios para instalaciones eléctricas",0.122178,_0431105,Otros productos y materiales para reparación y mantenimiento,0.379194251
+_032113,"Materiales, productos y accesorios para instalaciones eléctricas",0.122178,_0431106,Artículos de plomería,0.037998503
+_032115,"Otros materiales, productos y accesorios no clasificados en otro subgrupo unitario",0.042271,_0431107,Madera,0.035482602
+_032115,"Otros materiales, productos y accesorios no clasificados en otro subgrupo unitario",0.042271,_0431108,Pisos,0.06203335
+_032115,"Otros materiales, productos y accesorios no clasificados en otro subgrupo unitario",0.042271,_0431109,Puertas y ventanas,0.114310869
+_032211,Servicios de mantenimiento y reparaciones regulares de la vivienda,0.163474,_0432101,Servicios de mantenimiento y reparación de viviendas,0.6077799
+_032211,Servicios de mantenimiento y reparaciones regulares de la vivienda,0.163474,_0432102,Servicio de vigilancia residencial,0.091127999
+_033111,Gastos derivados del servicio de agua domiciliaria,0.722681,_0441101,Pago por consumo de agua,0.53324564
+_033111,Gastos derivados del servicio de agua domiciliaria,0.722681,_0441201,Compra de agua para el hogar por otros medios (no agua para beber),0.084567517
+_033151,"Gastos por recolección de desechos domésticos, barrido y descarga de afluentes",0.213699,_0442001,Pago por servicio de recolección de basura,0.222979132
+_033121,Gastos derivados del servicio de electricidad,2.533945999,_0451001,Consumo de energía eléctrica,2.482532881
+_033131,Gastos derivados del gas manufacturado y natural y gases licuados del petróleo,1.088735,_0452201,Gas en contenedores,1.144911646
+_033141,"Gastos por consumo de aceites domésticos para calentar y aceites para lámparas, combustibles de uso doméstico y accesorios de alumbrado",1.111354,_0454101,Carbón,0.033619863
+_033141,"Gastos por consumo de aceites domésticos para calentar y aceites para lámparas, combustibles de uso doméstico y accesorios de alumbrado",1.111354,_0454201,Leña,2.095011993
+_033141,"Gastos por consumo de aceites domésticos para calentar y aceites para lámparas, combustibles de uso doméstico y accesorios de alumbrado",1.111354,_0454202,Ocote,0.070330003
+_041111,Juegos de sala,0.211877,_0511101,Muebles de sala,0.076664123
+_041121,Juego de comedor,0.093361,_0511102,Muebles de comedor,0.057787605
+_041141,Muebles de cocina,0.054964,_0511103,Muebles de cocina,0.047208065
+_04113,Muebles de dormitorio,0.262077,_0511104,Muebles de dormitorio,0.410173305
+_041231,Objetos decorativos,0.159668,_0511401,Espejos,0.03299393
+_042111,Tejidos y textiles para el hogar,0.082591,_0521101,Cortinas,0.037010363
+_042121,"Colchones, sábanas y otros artículos similares para el hogar",0.495117,_0521201,Ropa de cama,0.206479476
+_042121,"Colchones, sábanas y otros artículos similares para el hogar",0.495117,_0521202,Hamacas,0.036929204
+_042111,Tejidos y textiles para el hogar,0.082591,_0521301,Manteles,0.055752167
+_042111,Tejidos y textiles para el hogar,0.082591,_0521302,Toallas de tela,0.041925205
+_043111,Refrigeradores y congeladores eléctricos,0.306369,_0531101,Refrigeradores y refrigeradores de temperatura dual,0.217135244
+_043121,Estufas a gas,0.19013,_0531102,Estufas,0.176020591
+_043112,Otros aparatos eléctricos para preservar alimentos,0.056573,_0531103,Hornos pequeños,0.034504439
+_043141,Lavadora de ropa,0.056616,_0531201,Lavadoras,0.137550231
+_043151,Licuadora,0.05597,_0532101,Licuadoras,0.067713958
+_043131,Aparatos elécticos para acondicionamiento del hogar,0.035859,_0532901,Ventiladores,0.024191177
+_044111,Vajillas,0.118949,_0540101,Vajillas,0.122889844
+_044131,Ollas,0.088658,_0540301,Ollas y cacerolas,0.173192925
+_044132,Utensilios y artículos para la cocina y uso doméstico,0.112788,_0540302,Sartenes,0.107465351
+_044131,Ollas,0.088658,_0540303,Ollas a presión,0.042278987
+_044112,"Otros artículos de cristalería, vidriería y vajillas",0.061972,_0540304,Vasos y tazas de plástico y melamina,0.0497263
+_045111,Herramientas y equipos para la casa y el jardín,0.067654,_0551001,Herramienta eléctrica,0.092935214
+_045111,Herramientas y equipos para la casa y el jardín,0.067654,_0552101,Herramientas no motorizadas,0.116457955
+_045111,Herramientas y equipos para la casa y el jardín,0.067654,_0552201,Bombillas,0.096382755
+_046113,Detergente en polvo para ropa,0.671354,_0561101,Detergente en polvo o líquido,0.783069234
+_046114,Jabón en bola,0.980285,_0561102,Jabón para ropa,0.695875321
+_046112,Desinfectante,0.200974,_0561103,Desinfectante,0.240132167
+_046111,Cloro o blanqueador,0.259351,_0561104,Cloro,0.317825466
+_046111,Cloro o blanqueador,0.259351,_0561105,"Jabón para trastos en crema, líquido, trozo y polvo",0.294385039
+_046111,Cloro o blanqueador,0.259351,_0561106,Suavizantes de ropa,0.184133204
+_046131,Artículos para limpieza,0.340616,_0561107,Escobas,0.095740583
+_046131,Artículos para limpieza,0.340616,_0561108,Esponjas,0.039998811
+_046131,Artículos para limpieza,0.340616,_0561901,Aromatizante ambiental,0.020883931
+_046131,Artículos para limpieza,0.340616,_0561902,"Insecticidas, pesticidas, fungicidas",0.045640358
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561903,Papel de cocina,0.056870002
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561904,Papel aluminio,0.03594719
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561905,Veladoras,0.021881179
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561906,Velas y candelas,0.052945267
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561907,Fósforos y/o cerillos,0.096708793
+_046121,"Artículos, accesorios y utensilios de diferentes tipos de material para uso del hogar",0.201289,_0561908,Lazos y cordeles para tender ropa,0.032347926
+_046211,Servicios para el mantenimiento rutinario del hogar,2.562627976,_0562101,Servicio para el hogar,0.638644212
+_051141,Productos naturales y medicamentos farmacéuticos para el sistema nervioso,0.260663998,_0611101,Acetaminofén (Paracetamol),0.219347575
+_051141,Productos naturales y medicamentos farmacéuticos para el sistema nervioso,0.260663998,_0611102,Diclofenaco,0.094406151
+_051141,Productos naturales y medicamentos farmacéuticos para el sistema nervioso,0.260663998,_0611103,Ibuprofeno,0.104261574
+_051152,"Productos antitusígenos, broncodilatadores y descongestivos para el sistema respiratorio",0.36397,_0611104,Ambroxol y Bromhexina,0.059738501
+_051152,"Productos antitusígenos, broncodilatadores y descongestivos para el sistema respiratorio",0.36397,_0611105,Dextrometorfano y/o guaifenesina,0.049119216
+_051151,Productos para el sistema cardiovascular,0.220478,_0611106,Losartán,0.030031559
+_051151,Productos para el sistema cardiovascular,0.220478,_0611107,Irbesartán,0.041933216
+_051151,Productos para el sistema cardiovascular,0.220478,_0611108,Valsartán,0.050501086
+_051151,Productos para el sistema cardiovascular,0.220478,_0611109,Enalapril,0.031673334
+_051113,"Productos naturales y medicamentos farmacéuticos para los parásitos, antibacterianos o anticolestorolemiantes",0.205878003,_0611110,Medicamentos para la diabetes,0.404922455
+_051161,Otros productos naturales y medicamentos farmacéutico no especificados en otro subgrupo,0.256356,_0611111,Medicamentos neurológicos o neurofármacos,0.103469286
+_051161,Otros productos naturales y medicamentos farmacéutico no especificados en otro subgrupo,0.256356,_0611112,Medicamentos oftalmológicos,0.086078512
+_051131,Productos naturales y medicamentos dermatológicos e inmunológicos,0.183502999,_0611113,Medicamentos dermatológicos,0.055372561
+_051111,Productos naturales y medicamentos farmaceúticos para la nutrición y estimulantes del apetito,0.497565,_0611114,"Vitaminas, multivitamínicos y minerales",1.229240631
+_051161,Otros productos naturales y medicamentos farmacéutico no especificados en otro subgrupo,0.256356,_0611115,Medicamentos para huesos y articulaciones,0.05773908
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611116,Medicamentos relajantes musculares,0.045114046
+_051121,Productos naturlaes y mediamentos farmacéuticos para el sistema digestivo,0.191886,_0611117,Medicamentos gastrointestinales,0.178529268
+_051112,"Antibióticos, penicilinas, rifaminas, sulfas y tetracicilinas",0.324482,_0611118,Amoxicilina,0.121229514
+_051112,"Antibióticos, penicilinas, rifaminas, sulfas y tetracicilinas",0.324482,_0611119,Penicilina,0.020108818
+_051112,"Antibióticos, penicilinas, rifaminas, sulfas y tetracicilinas",0.324482,_0611120,Trimetoprim y/o sulfametoxazol,0.023297237
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611121,Alcohol medicinal,0.048708164
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611122,Mercurio cromo,0.091781349
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611123,Mertiolate o metafe,0.091781349
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611124,"Anticonceptivos (orales, inyectables, subdérmicos y subcutáneos)",0.028890742
+_051131,Productos naturales y medicamentos dermatológicos e inmunológicos,0.183502999,_0611125,Loratadina,0.018685753
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0611201,Medicamentos naturales y homeopáticos,0.122302392
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0612201,Dispositivos o productos terapéuticos,0.231310889
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0612301,Otros dispositivos de tratamiento para uso personal,0.05350333
+_0511,Productos naturales y medicamentos farmacéuticos,2.504782,_0612302,Productos para botiquín,0.036850516
+_051211,Anteojos correctores y lentes de contacto,0.240617,_0613101,Lentes correctivos completos y por separado (aros o lentes),0.231009035
+_051161,Otros productos naturales y medicamentos farmacéutico no especificados en otro subgrupo,0.256356,_0613301,Productos para incontinencia,0.054916384
+_052121,Servicios médicos,0.983351,_0621901,Consulta con ginecólogo y obstetra,0.142502639
+_052121,Servicios médicos,0.983351,_0621902,Consulta con pediatra,0.154340589
+_052121,Servicios médicos,0.983351,_0621903,Consulta con cardiólogo,0.086069359
+_052121,Servicios médicos,0.983351,_0621904,Consulta con gastroenterólogo,0.119299897
+_052121,Servicios médicos,0.983351,_0621905,Consulta con oftalmólogo,0.07851672
+_052121,Servicios médicos,0.983351,_0621906,Consulta con endocrinólogo,0.060517476
+_052121,Servicios médicos,0.983351,_0621907,Consulta con traumatólogo,0.09645616
+_052121,Servicios médicos,0.983351,_0621908,Consulta con neumólogo,0.067676233
+_052121,Servicios médicos,0.983351,_0621909,Consulta con médico general internista,0.043522899
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622101,Limpieza dental,0.081589092
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622901,Servicio extracción dental,0.079032003
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622902,Servicio de relleno dental,0.11388159
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622903,Servicio de ortodoncia (Brackets y retenedores),0.108922463
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622904,Servicio de endodoncia,0.04626327
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0622905,Servicio de implantes dentales,0.104912612
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0631001,Parto normal,0.061595753
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0631002,Parto con cesárea,0.067513754
+_052111,Servicios básicos de hospitales,1.060309,_0631003,Hospitalización sin cirugía,0.30751061
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0631004,Hospitalización con cirugía,0.486057523
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0631005,Hospitalización por cuadro respiratorio,0.106050787
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641101,Exámenes de sangre,0.316657893
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641102,Otros exámenes de laboratorio,0.03490431
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641201,Radiografía,0.074911192
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641202,Ultrasonido,0.119548345
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641203,Electrocardiograma,0.026697583
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641204,Tomografía,0.048564219
+_052131,Otros servicios médicos y paramédicos,0.694570005,_0641205,Resonancia,0.033717528
+_061111,Automóviles,1.624589999,_0711101,Vehículo nuevo,0.569496619
+_061112,Otros vehículos,0.550262,_0711102,Pick up nuevo,0.559874937
+_061112,Otros vehículos,0.550262,_0711103,Camioneta nueva,0.710739191
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0712001,Motocicleta,0.820190236
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0713001,Bicicleta,0.043872977
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0721101,Llantas nuevas,0.31166258
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0721201,Baterías,0.089248756
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0721202,Amortiguadores,0.06162935
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0721203,Otros repuestos para equipo de transporte personal,0.084957535
+_061231,Gasolina,2.046463999,_0722101,Diesel,0.228965625
+_061231,Gasolina,2.046463999,_0722201,Gasolina,3.45350926
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0722401,Aceite de motor,0.030503196
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0722402,Líquido de frenos,0.037523604
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723101,Lavado y lustrado de vehículos,0.108861757
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723102,Servicio de pinchazo,0.056874846
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723103,Servicio menor,0.294716405
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723104,Servicio de frenos,0.119592796
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723105,Montaje de piezas/accesorios,0.064091062
+_061221,Reparación y mantenimento de vehículos personales,1.327709999,_0723106,Otros servicios de mantenimiento y reparación de vehículos,0.12772243
+_061211,Repuestos y accesorios para vehículos personales,0.606174,_0724101,Alquiler de estacionamiento,0.077627766
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0724102,Pago de parqueo,0.030159725
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_0724301,Examen para obtención de licencia,0.034438705
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_0724302,Renovación o reposición de licencia,0.038457231
+_061321,Transporte urbano,1.045616,_0732101,"Transporte urbano (bus urbano, transmetro, transurbano)",0.494766387
+_061311,Transporte extraurbano,0.872294,_0732102,"Transporte interurbano nacional (departamentales, municipales)",0.893083966
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0732103,Taxi compartido/colectivo,0.074026378
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0732201,Taxi,0.180120395
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0732202,Transporte particular/privado,0.106529698
+_082111,Transporte escolar,0.15605,_0732301,Transporte escolar,0.021129115
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_0732901,Otros tipos de taxi,0.04415632
+_061331,Transporte aéreo,0.627407,_0733201,Transporte de pasajeros por aire en horarios internacionales y vuelos regulares,0.083244982
+_062112,Servicio de correo nacional,0.008157,_0741201,Servicio de paquetería nacional,0.043751832
+_062211,Compra de quipo telefónico y de telefax,0.01772,_0812001,Teléfonos inteligentes,0.511843286
+_071131,Equipos para procesamiento de datos,0.281171,_0813101,Computadoras,0.235248548
+_071131,Equipos para procesamiento de datos,0.281171,_0813102,Tablets o tabletas electrónicas,0.03299901
+_071121,Televisores,0.513887,_0813201,Impresoras de uso doméstico,0.049740886
+_071121,Televisores,0.513887,_0814001,Televisores,0.280337634
+_071111,Equipos de sonido,0.206353,_0814002,Equipos de sonido para el hogar,0.053197446
+_062211,Compra de quipo telefónico y de telefax,0.01772,_0819201,Cargadores para dispositivos móviles,0.040345039
+_062311,Telefonía residencial,1.548608999,_0831001,Servicio de telefonía fijo,0.033988198
+_062312,Otros servicios de telefonía,0.449177,_0832001,Servicio de telefonía móvil post pago,0.647704254
+_062312,Otros servicios de telefonía,0.449177,_0832002,Servicio de telefonía móvil prepago,1.816867936
+_06231,Servicios de telefonía,1.997785999,_0833001,"Servicios de acceso a internet provistos por operadores de red con infraestructura cableada, inalámbrica o satelital",0.526629576
+_06231,Servicios de telefonía,1.997785999,_0834001,Paquetes con cualquier combinación de telecomunicación,0.708390143
+_071151,"Reparación y/o mantenimiento de equipos para la recepción grabación y reproducción de imagen, equipos fotográficos y ópticos",0.057774,_0835001,Reparación de todo equipo de información y comunicación,0.02478183
+_06231,Servicios de telefonía,1.997785999,_0839201,Servicios de streaming (música y televisión/películas),0.088109568
+_075121,Televisón por cable,0.645183,_0839202,"Suscripción a Televisión por cable, TV satelital, IPTV y Televisión por pago",0.629559419
+_073131,Juegos y juguetes de otro tipo de material no clasificado en otro subgrupo,0.13275,_0921101,Consolas de videojuegos,0.068418628
+_073111,"Juegos y juguetes de plástico, hule o materiales similares",0.208535,_0921201,"Muñecas, juguetes de peluche",0.059058966
+_073121,Juegos y juguetes de metal o materiales similares,0.081319,_0921202,"Carros de juguete, trenes",0.073386494
+_073121,Juegos y juguetes de metal o materiales similares,0.081319,_0921203,Bicicletas para jugar y triciclos (para niños pequeños),0.040622098
+_074121,Ropa y calzado para deportes,0.168581,_0922101,"Calzado específico para el juego (botas de esquí, zapatos de football, golf y similares)",0.071404873
+_078111,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",0.817591,_0931201,"Flores interiores (naturales o artificiales, en floreros o no)",0.035393961
+_078111,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",0.817591,_0931202,Flores exteriores,0.029930918
+_078111,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",0.817591,_0932101,Compra de mascotas,0.022113011
+_078111,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",0.817591,_0932102,Alimento para mascotas,0.473505906
+_078111,"Adquisición de animales, plantas y productos de jardinería y otros productos para el cuidado de los animales",0.817591,_0945001,Servicios veterinarios,0.074361931
+_0741,"Artículos, accesorios y ropa para deportes",0.297228,_0946201,Gimnasio,0.106403386
+_0741,"Artículos, accesorios y ropa para deportes",0.297228,_0946202,Lecciones deportes,0.035938096
+_075111,"Gastos por ingreso a diferentes lugares, culturales, sociales y de esparcimiento",0.521604,_0961001,Cines,0.080154028
+_081211,"Libros de texto, enciclopedias, atlas y diccionarios",0.506622004,_0971101,Libros de texto de educación formal,0.55517657
+_076121,"Libros de texto y folletos no escolares, y demás material impreso diverso",0.034326,_0971901,Libros religiosos,0.086786264
+_076121,"Libros de texto y folletos no escolares, y demás material impreso diverso",0.034326,_0971902,Libros complementarios,0.034965119
+_076111,Gastos por suscripción y/o compra de revistas periódicos y similares,0.228993,_0972101,Diarios y periódicos nacionales,0.0256257
+_081221,Material y útiles de estudio de papel,0.143306,_0974001,Lista de útiles escolares,0.461421766
+_081221,Material y útiles de estudio de papel,0.143306,_0974002,Cuadernos,0.152664687
+_081221,Material y útiles de estudio de papel,0.143306,_0974003,Papel para artes y para envolver,0.024676038
+_081221,Material y útiles de estudio de papel,0.143306,_0974004,"Hojas de cuadrícula, líneas, bond",0.045374664
+_081231,Otros materiales y útiles de estudio,0.997997,_0974005,Tijeras,0.030196413
+_081231,Otros materiales y útiles de estudio,0.997997,_0974006,Crayones y marcadores,0.060534203
+_081231,Otros materiales y útiles de estudio,0.997997,_0974007,Mochilas escolares,0.118925713
+_081231,Otros materiales y útiles de estudio,0.997997,_0974008,Lápices y lapiceros,0.021903421
+_077121,Viajes de paseo y/o recreación fuera del país,0.556234,_0980001,Paquete turístico para viajar al extranjero,0.058903152
+_081112,Cuota mensual en educación primaria y preprimaria,1.010865,_1010101,Servicio de educación preprimaria,0.069246095
+_081112,Cuota mensual en educación primaria y preprimaria,1.010865,_1010201,Servicios de educación primaria,0.45403649
+_081122,Cuota mensual en educación secundaria,1.175477,_1020001,Servicios de educación básica,0.319789231
+_081122,Cuota mensual en educación secundaria,1.175477,_1020002,Servicios de educación diversificado,0.401416756
+_081141,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",0.170446,_1020003,Servicios de educación por cooperativa,0.029887884
+_081131,Incripción en educación superior,0.127417,_1040001,Educación universitaria,0.781481242
+_081141,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",0.170446,_1050101,Tutorías,0.031623944
+_081141,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",0.170446,_1050901,Cursos de Capacitación técnica,0.078353809
+_081141,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",0.170446,_1050902,Cursos de idiomas,0.111761422
+_081141,"Educación no formal en establecimientos públicos y privados (clases de apoyo, lecciones o cursos)",0.170446,_1050903,Cursos de informática,0.033176044
+_012222,Desayuno (o cena),2.861801999,_1111101,Desayuno o cena simple (bebida y un acompañamiento),0.288563409
+_012222,Desayuno (o cena),2.861801999,_1111102,Desayuno o cena continental (bebida y dos acompañamientos),0.30530212
+_012222,Desayuno (o cena),2.861801999,_1111103,Desayuno o cena completo (bebida caliente y más de dos acompañamientos),0.385780185
+_012222,Desayuno (o cena),2.861801999,_1111104,Otro tipo de desayuno o cena,0.046690358
+_012221,Almuerzo,5.139340998,_1111105,"Almuerzo simple (bebida, carne y acompañamiento) excluye gaseosa",1.656022071
+_012221,Almuerzo,5.139340998,_1111106,Almuerzo simple (bebida y plato sin carne) excluye gaseosa,0.728439702
+_012221,Almuerzo,5.139340998,_1111107,"Almuerzo (bebida, entrada y plato con carne)",0.152287371
+_012221,Almuerzo,5.139340998,_1111108,Almuerzo buffet,0.080003846
+_012211,Comidas preparadas para llevar a domicilio,0.862272,_1111201,Combos de comida rápida individual,0.786407056
+_012211,Comidas preparadas para llevar a domicilio,0.862272,_1111202,Combos de comida rápida familiar,0.608111409
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111203,Platos preparados,0.246083453
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111204,Panes tipo sándwich,0.096567434
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111205,Alimentos a base de tortilla,0.31628511
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111206,Otros tipos de alimentos regionales,0.811298995
+_012231,"Golosinas, productos sintéticos y otras comidas preparadas fuera del hogar",0.19253,_1111207,"Pastelería, repostería y postres",0.029084443
+_012231,"Golosinas, productos sintéticos y otras comidas preparadas fuera del hogar",0.19253,_1111208,Bocadillos,0.533791131
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111209,Bebidas no alcohólicas frías servidas en el lugar,0.055420465
+_012221,Almuerzo,5.139340998,_1111210,Bebidas no alcohólicas calientes servidas en el lugar,0.086527865
+_01222,"Almuerzo, desayuno y refacciones",8.984160987,_1111211,Gasto en alimentos para celebraciones,0.21842885
+_077111,Viajes de paseo y/o recreación dentro del país,0.848702,_1120101,Alojamiento en hoteles,0.12708134
+_093111,Gastos por seguros,0.236691,_1211001,Seguro Funerario,0.031064116
+_093111,Gastos por seguros,0.236691,_1212001,Seguro Médico,0.103090433
+_093111,Gastos por seguros,0.236691,_1214101,Seguro de vehículos,0.191697333
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_1221001,Servicios financieros de tarjetas de crédito,0.0329237
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_1229901,Otros servicios financieros,0.032353992
+_091121,Aparatos y accesorios para el cuidado personal,0.358383,_1311101,Máquinas para afeitar eléctricas y depiladoras eléctricas,0.043324366
+_091121,Aparatos y accesorios para el cuidado personal,0.358383,_1312001,Cepillos de dientes,0.122465924
+_091151,Papel higiénico,0.510764,_1312002,Papel higiénico,0.863646748
+_091133,Jabón de tocador en pastilla,0.365983,_1312003,Jabón de baño en todas sus presentaciones,0.337988559
+_091132,Pasta dental,0.455329,_1312004,Pasta de dientes y enjuagues bucales,0.475239419
+_091131,Champú para el cabello,0.524601,_1312005,Shampoo y/o acondicionador,0.644164555
+_091152,Otros productos para el cuidado personal,0.348655,_1312006,Productos para protección femenina,0.299858337
+_091152,Otros productos para el cuidado personal,0.348655,_1312007,Pañales para bebes,0.396868936
+_091152,Otros productos para el cuidado personal,0.348655,_1312008,Toallas húmedas para bebés,0.137798974
+_091152,Otros productos para el cuidado personal,0.348655,_1312009,Hisopos,0.031930352
+_091143,Productos de belleza,0.454034,_1312010,Crema para el cuerpo y rostro,0.02623583
+_091142,Desodorantes,0.429261,_1312011,Desodorante y/o antitranspirante,0.583564097
+_091143,Productos de belleza,0.454034,_1312012,Maquillaje,0.122465414
+_091143,Productos de belleza,0.454034,_1312013,Otros productos de belleza,0.056858301
+_091111,Corte de cabello,0.570456,_1313101,Cortes de cabello para hombre,0.493960211
+_091111,Corte de cabello,0.570456,_1313102,Cortes de cabello para mujer,0.071485856
+_0911,Productos para el cuidado personal,5.454136999,_1313103,Peinados y aplicación de tintes para el cabello,0.070667931
+_0911,Productos para el cuidado personal,5.454136999,_1313104,Colocación de uñas acrílicas,0.047493919
+_0911,Productos para el cuidado personal,5.454136999,_1313105,Servicio de depilación,0.037972072
+_0911,Productos para el cuidado personal,5.454136999,_1313201,Servicio de manicura y pedicura,0.084133854
+_091161,Artículos de joyería y otros personales,0.610667999,_1321101,Anillos,0.042267493
+_091161,Artículos de joyería y otros personales,0.610667999,_1321102,Cadenas,0.05557166
+_091161,Artículos de joyería y otros personales,0.610667999,_1321103,Aretes,0.024143315
+_091161,Artículos de joyería y otros personales,0.610667999,_1321104,Relojes de pulsera,0.025669218
+_091161,Artículos de joyería y otros personales,0.610667999,_1329101,Sombrillas y paraguas,0.034251716
+_091161,Artículos de joyería y otros personales,0.610667999,_1329102,Ataúdes,0.03454027
+_093121,Gastos por servicios funerarios,0.289885,_1329103,Alquiler o préstamo de nicho,0.11806416
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_1390901,Servicios legales y financieros,0.066230766
+_093121,Gastos por servicios funerarios,0.289885,_1390902,Servicios funerarios,0.154298106
+_094111,Gastos por servicios diversos para el hogar,0.151792999,_1390903,Servicios de registro civil,0.045972277
+_061121,Adquisición de otros vehíclos de transporte personal (bicicletas y motos),0.155166,_1390904,Pago de impuestos de circulación de vehículo,0.139208146
+_075131,"Gastos por servicios sociales, fiestas y/o convivios familiares y no familiares",0.818188,_1390905,Fiestas y celebraciones,0.871513612

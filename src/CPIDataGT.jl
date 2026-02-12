@@ -16,20 +16,23 @@ using Scratch
 ## CPIDataBase objects
 export GT00, GT10               # VarCPIBase with month-to-month IPC variations
 export FGT00, FGT10             # FullCPIBase with complete IPC data (codes, names)
-export GTDATA                   # CountryStructure wrapper
+export GTDATA10                   # CountryStructure wrapper
 export CPITREE00, CPITREE10, CPITREE23, CPITREE24   # CPI hierarchical tree structures
 
 # Experimental
 export FGT23, GT23, GTDATA23
 export FGT24, GT24, GTDATA24
-
+export GTDATA
 ## DataFrames objects
 export DF_ITEMS_00, DF_ITEMS_10, DF_ITEMS_23, DF_ITEMS_24
 export DF_CPI_00, DF_CPI_10, DF_CPI_23, DF_CPI_24
-
+export CPIMATCH_10_23, CPIMATCH_00_23
 ## Functions to build and load data
 export load_data, load_tree_data, load_dataframes
 
+
+export FullCPIMatch
+include("matching_bases.jl")
 ## Paths
 PROJECT_ROOT = pkgdir(@__MODULE__)
 # JLD files directory (filled by Scratch)
@@ -69,12 +72,14 @@ function load_data(; full_precision::Bool = false)
 
     # Load data
     @info "Loading Guatemalan CPI data..."
-    global FGT00, FGT10, GT00, GT10, GTDATA = load(datafile, "fgt00", "fgt10", "gt00", "gt10", "gtdata")
-    @info "Data loaded in exported structures `FGT00`, `FGT10`, `GT00`, `GT10` and `GTDATA`"
+    global FGT00, FGT10, GT00, GT10, GTDATA10 = load(datafile, "fgt00", "fgt10", "gt00", "gt10", "gtdata_10")
+    @info "Data loaded in exported structures `FGT00`, `FGT10`, `GT00`, `GT10` and `GTDATA10`"
     global FGT23, GT23, GTDATA23 = load(datafile, "fgt23", "gt23", "gtdata_23")
     @info "CPI 2023 data on `FGT23`, `GT23`, and `GTDATA23`"
     global FGT24, GT24, GTDATA24 = load(datafile, "fgt24", "gt24", "gtdata_24")
-    return @info "CPI 2024 data on `FGT24`, `GT24`, and `GTDATA24`"
+    @info "CPI 2024 data on `FGT24`, `GT24`, and `GTDATA24`"
+    global GTDATA = load(datafile, "gtdata")
+    return @info "`GTDATA` contains all basis"
 end
 
 """
@@ -128,6 +133,26 @@ function load_tree_data(; full_precision::Bool = false)
     @info "Loading the Guatemalan CPI hierarchical tree data..."
     global CPITREE00, CPITREE10, CPITREE23, CPITREE24 = load(datafile, "cpi_00_tree", "cpi_10_tree", "cpi_23_tree", "cpi_24_tree")
     return @info "Data loaded in exported consts `CPITREE00`, `CPITREE10`, `CPITREE23` and `CPITREE24`"
+end
+
+"""
+    load_matching(;)
+
+Load the CPI matching into the variables: 
+- `CPIMATCH_00_23`,
+- `CPIMATCH_10_23`,
+
+"""
+function load_matching()
+    datafile = DATAFRAMES_FILE
+
+    # Perform expensive data reading and saving if file does not exist
+    isfile(datafile) || build_data()
+
+    # Load data
+    @info "Loading the Guatemalan CPI matching data..."
+    global CPIMATCH_00_23, CPIMATCH_10_23 = load(datafile, "matching_00_23", "matching_10_23")
+    return @info "Data loaded in exported consts `CPIMATCH_00_23`, `CPIMATCH_10_23`,"
 end
 
 
@@ -197,18 +222,22 @@ function build_data()
     var_gt24_32 = VarCPIBase(full_gt24_32)
 
     # Country data container structure 2000-2010 CPI bases
-    gtdata_32 = UniformCountryStructure(var_gt00_32, var_gt10_32)
-    gtdata_64 = UniformCountryStructure(var_gt00_64, var_gt10_64)
+    gtdata10_32 = UniformCountryStructure(var_gt00_32, var_gt10_32)
+    gtdata10_64 = UniformCountryStructure(var_gt00_64, var_gt10_64)
 
     # Container for data including 2023 CPI base
     gtdata23_32 = UniformCountryStructure(var_gt00_32, var_gt10_32, var_gt23_32)
     gtdata23_64 = UniformCountryStructure(var_gt00_64, var_gt10_64, var_gt23_64)
 
-    # Experimental new data container including 2024 new CPI base
+    # Data container including 2024 new CPI base
     gtdata24_32 = MixedCountryStructure(var_gt00_32, var_gt10_32, var_gt23_32, var_gt24_32)
     gtdata24_64 = MixedCountryStructure(var_gt00_64, var_gt10_64, var_gt23_64, var_gt24_64)
 
-    @info "Successful building of data structures" GTDATA = gtdata_32 GTDATA23 = gtdata23_32 GTDATA24 = gtdata24_32
+    # Experimental new data container including all CPI bases, since Base 2000 until the last one.
+    gtdataComplete_32 = MixedCountryStructure(var_gt00_32, var_gt10_32, var_gt23_32, var_gt24_32)
+    gtdataComplete_64 = MixedCountryStructure(var_gt00_64, var_gt10_64, var_gt23_64, var_gt24_64)
+
+    @info "Successful building of data structures" GTDATA10 = gtdata10_32 GTDATA23 = gtdata23_32 GTDATA24 = gtdata24_32 GTDATA = gtdataComplete_32
 
     ## Build the hierarchical IPC tree Base 2023
     groups24 = CSV.read(newdatadir("Guatemala_IPC_2024_Groups.csv"), DataFrame)
@@ -270,6 +299,14 @@ function build_data()
         groupsdf = groups00,
         characters = (3, 4, 5, 6, 7),
     )
+    ## Matching dataframes
+
+    matching_10_23 = CSV.read(datadir("matching_CPI_2010_2023.csv"), DataFrame, normalizenames = true)
+    sort!(matching_10_23, [:code_b23])
+
+    matching_00_23 = CSV.read(datadir("matching_CPI_2000_2023.csv"), DataFrame, normalizenames = true)
+    sort!(matching_00_23, [:code_b23])
+
 
     ## Save data in JLD2 format for later loading
     @info "Saving JLD2 data files"
@@ -287,14 +324,16 @@ function build_data()
         gt23 = var_gt23_32,
         gt24 = var_gt24_32,
         # UniformCountryStructure
-        gtdata = gtdata_32,
+        gtdata_10 = gtdata10_32,
         gtdata_23 = gtdata23_32,
         gtdata_24 = gtdata24_32,
+        gtdata = gtdataComplete_32,
         # Hierarchical trees
         cpi_00_tree = cpi_00_tree_32,
         cpi_10_tree = cpi_10_tree_32,
         cpi_23_tree = cpi_23_tree_32,
         cpi_24_tree = cpi_24_tree_32,
+
     )
 
     jldsave(
@@ -310,9 +349,10 @@ function build_data()
         gt23 = var_gt23_64,
         gt24 = var_gt24_64,
         # UniformCountryStructure
-        gtdata = gtdata_64,
+        gtdata_10 = gtdata10_64,
         gtdata_23 = gtdata23_64,
         gtdata_24 = gtdata24_64,
+        gtdata = gtdataComplete_64,
         # Hierarchical trees
         cpi_00_tree = cpi_00_tree_64,
         cpi_10_tree = cpi_10_tree_64,
@@ -331,6 +371,9 @@ function build_data()
         gt_base23, gt23gb,
         # IPC base 2024
         gt_base24, gt24gb,
+        # Matchings
+        matching_00_23,
+        matching_10_23,
     )
 
     return @info "Data structures successfully saved"
