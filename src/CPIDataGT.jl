@@ -31,7 +31,9 @@ export CPIMATCH_10_23, CPIMATCH_00_23
 export load_data, load_tree_data, load_dataframes, load_matching
 
 
-export FullCPIMatch
+export FullCPIMatch, CPIMatch
+# Functions
+export target_code, source_code, target_description, source_description
 include("matching_bases.jl")
 ## Paths
 PROJECT_ROOT = pkgdir(@__MODULE__)
