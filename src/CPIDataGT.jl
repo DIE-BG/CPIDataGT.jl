@@ -26,14 +26,15 @@ export GTDATA
 ## DataFrames objects
 export DF_ITEMS_00, DF_ITEMS_10, DF_ITEMS_23, DF_ITEMS_24
 export DF_CPI_00, DF_CPI_10, DF_CPI_23, DF_CPI_24
-export CPIMATCH_10_23, CPIMATCH_00_23
+export DF_CPIMATCH_10_23, DF_CPIMATCH_00_23, DF_CPIMATCH_23_10
 ## Functions to build and load data
-export load_data, load_tree_data, load_dataframes, load_matching
+export load_data, load_tree_data, load_dataframes
+#load_matching
 
 
-export FullCPIMatch, CPIMatch
+export FullCPIMatch, matchcell_list, matchcell_list_inverse, getcpimatch, CodeMatchCell
+export find_codes_images, find_descriptions_images
 # Functions
-export target_code, source_code, target_description, source_description
 include("matching_bases.jl")
 ## Paths
 PROJECT_ROOT = pkgdir(@__MODULE__)
@@ -109,8 +110,10 @@ function load_dataframes()
     @info "Loading Guatemalan CPI DataFrames..."
     global DF_ITEMS_00, DF_ITEMS_10, DF_ITEMS_23, DF_ITEMS_24 = load(datafile, "gt00gb", "gt10gb", "gt23gb", "gt24gb")
     global DF_CPI_00, DF_CPI_10, DF_CPI_23, DF_CPI_24 = load(datafile, "gt_base00", "gt_base10", "gt_base23", "gt_base24")
+    global DF_CPIMATCH_23_00, DF_CPIMATCH_23_10, DF_CPIMATCH_10_23 = load(datafile, "matching_from_b23_to_b00_df", "matching_from_b23_to_b10_df", "matching_from_b10_to_b23_df")
     @info "Items DataFrames loaded: `DF_ITEMS_00`, `DF_ITEMS_10`, `DF_ITEMS_23` and `DF_ITEMS_24`"
-    return @info "Index numbers DataFrames loaded: `DF_CPI_00`, `DF_CPI_10`, `DF_CPI_23` and `DF_CPI_24`"
+    @info "Index numbers DataFrames loaded: `DF_CPI_00`, `DF_CPI_10`, `DF_CPI_23` and `DF_CPI_24`"
+    return @info "Matching DataFrames loaded: `DF_CPIMATCH_23_00`, `DF_CPIMATCH_23_10`, and `DF_CPIMATCH_10_23`"
 end
 
 """
@@ -146,15 +149,13 @@ Load the CPI matching into the variables:
 
 """
 function load_matching()
-    datafile = DATAFRAMES_FILE
-
+    datafile = DOUBLE_DATAFILE
     # Perform expensive data reading and saving if file does not exist
     isfile(datafile) || build_data()
-
     # Load data
     @info "Loading the Guatemalan CPI matching data..."
-    global CPIMATCH_00_23, CPIMATCH_10_23 = load(datafile, "matching_00_23", "matching_10_23")
-    return @info "Data loaded in exported consts `CPIMATCH_00_23`, `CPIMATCH_10_23`,"
+    global FMATCH_00_23, FMATCH_10_23 = load(datafile, "fmatch_00_23", "fmatch_10_23")
+    return @info "Data loaded in exported consts `MATCH_00_23`, `MATCH_10_23`"
 end
 
 
@@ -303,12 +304,13 @@ function build_data()
     )
     ## Matching dataframes
 
-    matching_10_23 = CSV.read(datadir("matching_CPI_2010_2023.csv"), DataFrame, normalizenames = true)
-    sort!(matching_10_23, [:code_b23])
+    matching_from_b23_to_b10_df = CSV.read(datadir("matching_CPI_2010_2023.csv"), DataFrame, normalizenames = true)
+    sort!(matching_from_b23_to_b10_df, [:code_b23])
 
-    matching_00_23 = CSV.read(datadir("matching_CPI_2000_2023.csv"), DataFrame, normalizenames = true)
-    sort!(matching_00_23, [:code_b23])
+    matching_from_b23_to_b00_df = CSV.read(datadir("matching_CPI_2000_2023.csv"), DataFrame, normalizenames = true)
+    sort!(matching_from_b23_to_b00_df, [:code_b23])
 
+    matching_from_b10_to_b23_df = CSV.read(datadir("matching_CPI_2023_2010.csv"), DataFrame, normalizenames = true)
 
     ## Save data in JLD2 format for later loading
     @info "Saving JLD2 data files"
@@ -359,7 +361,7 @@ function build_data()
         cpi_00_tree = cpi_00_tree_64,
         cpi_10_tree = cpi_10_tree_64,
         cpi_23_tree = cpi_23_tree_64,
-        cpi_24_tree = cpi_24_tree_64,
+
     )
 
     # Original DataFrames
@@ -374,8 +376,10 @@ function build_data()
         # IPC base 2024
         gt_base24, gt24gb,
         # Matchings
-        matching_00_23,
-        matching_10_23,
+
+        matching_from_b10_to_b23_df,
+        matching_from_b23_to_b00_df,
+        matching_from_b23_to_b10_df,
     )
 
     return @info "Data structures successfully saved"

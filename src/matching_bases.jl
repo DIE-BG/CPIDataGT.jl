@@ -1,21 +1,102 @@
 ## mathcing_bases.jl - Types and methods to operate matchings
 """
     const DESCTYPE = Union{Vector{String}, Nothing}
-Tipos posibles para los nombres en el campo `names` de un [`FullCPIBase`](@ref).
+Possible types for names in the `names` field of a [`FullCPIMatch`](@ref).
 """
 const DESCTYPE = Union{Vector{String}, Nothing}
 
 """
     const CODETYPE = Union{Vector{String}, Nothing}
-Tipos posibles para los códigos en el campo `codes` de un [`FullCPIBase`](@ref).
+Possible types for codes in the `codes` field of a [`FullCPIMatch`](@ref).
 """
 const CODETYPE = Union{Vector{String}, Nothing}
+
+# Type to represent matching between two FullCPIBase's
+Base.@kwdef struct CodeMatchCell{V, W}
+    inputs::V
+    outputs::W
+    method::Symbol = :auto
+end
+
+
+# Convenience constructor for automatic method
+CodeMatchCell(inputs, outputs) = CodeMatchCell(inputs, outputs, :auto)
+
+# Helper to return the matching object from source and destination codes
+function getcpimatch(image, departure)
+    methods = ["mean", "median", "zero"]
+    if image[1] in methods
+        matchobj = CodeMatchCell(inputs = departure, outputs = nothing, method = Symbol(image[1]))
+    else
+        matchobj = CodeMatchCell(inputs = departure, outputs = image)
+    end
+    return matchobj
+end
+
+
 ##  ----------------------------------------------------------------------------
 #   Every IPC base has many products. Base 2000 has 218 items, Base 2010 has 279
 #   items, Base 2023 has 437 items, and Base 2024 has 436. The following objects
 #   links Bases acording with a procedure explained in "B-TIMA extension".
 #   ----------------------------------------------------------------------------
 
+"""
+    matchcell_list(df::DataFrame, domain::Symbol, codomain::Symbol)
+
+Parse a many-to-many correspondence table stored in `df` and build a list of
+match objects between a `domain` and a `codomain`.
+
+# Arguments
+- `df::DataFrame`: A DataFrame containing the correspondence table.
+- `domain::Symbol`: Column name representing the source (domain) codes.
+- `codomain::Symbol`: Column name representing the target (codomain) codes.
+
+# Returns
+- `Vector`: A vector of match objects produced by `getcpimatch`.
+
+# Assumptions
+- The DataFrame is pre-sorted so that codomain rows belonging to a given
+  domain appear consecutively.
+- `getcpimatch(codom, dom)` is defined elsewhere and returns a match object.
+- `domain` values signal the beginning of a new group when non-missing.
+
+# Example
+```julia
+matches = matchcell_list(df, :Code2010, :Code2023)
+```
+"""
+
+function matchcell_list(df::DataFrame, domain::Symbol, codomain::Symbol)
+    codom = String[]
+    dom = String[]
+    matchobjs = []
+    for r in eachrow(df)
+        domcode = r[domain]
+        codomcode = r[codomain]
+
+        (!ismissing(domcode) && startswith(domcode, ".")) && continue
+        new = !ismissing(domcode)
+
+        if new
+            if !isempty(codom)
+                a = getcpimatch(codom, dom)
+                push!(matchobjs, a)
+            end
+            dom = String[]
+            codom = String[]
+            push!(dom, domcode)
+        end
+        push!(codom, codomcode)
+    end
+    return matchobjs
+end
+
+function matchcell_list_inverse(df::DataFrame, domain::Symbol, codomain::Symbol)
+    original = matchcell_list(df, domain, codomain)
+    filter!(m -> m.method == :auto, original)
+    return inverted = [CodeMatchCell(inputs = m.outputs, outputs = m.inputs, method = m.method) for m in original]
+
+end
 """
     abstract type AbstractCPIMatch
 
@@ -24,40 +105,53 @@ Abstract type to represent matching from one base with other.
 abstract type AbstractCPIMatch end
 
 """
-   FullCPIMatch
 
-Structure representing a complete match between two CPI bases
-(source and target)
+    FullCPIMatch{V,W}
 
+Container type representing a collection of `CodeMatchCell{V,W}` objects
+describing correspondences between two `FullCPIBase` objects.
 
-`FullCPIMatch` stores a full correspondence between two CPI classifications,
-including codes, descriptions, and optional weights on both sides of the mapping.
+# Type Parameters
+- `V`: Type of the input (domain) codes.
+- `W`: Type of the output (codomain) collections stored in each `CodeMatchCell`.
 
+# Fields
+- `matches::Vector{CodeMatchCell{V,W}}`:
+  Vector of match cells defining the mapping relationships.
+- `domain::FullCPIBase`:
+  The CPI base from which codes originate.
+- `codomain::FullCPIBase`:
+  The CPI base to which codes are mapped.
+
+# Description
+`CodeMatchList` represents a structured many-to-many (or one-to-many)
+mapping between two CPI bases. Each element in `matches` defines the
+correspondence between a single domain code and one or more codomain
+codes.
+
+The type parameters `V` and `W` ensure type stability across all stored
+match cells.
+
+# Example
+```julia
+matchlist = FullCPIMatch(
+    matches = matches_vector,
+    domain = CPITREE00,
+    codomain = CPITREE23,
+)
+```
 """
 Base.@kwdef struct FullCPIMatch <: AbstractCPIMatch
-    codes_source::CODETYPE
-    codes_target::CODETYPE
-    descriptions_source::DESCTYPE
-    descriptions_target::DESCTYPE
-    ws_source::Vector{Float64}
-    ws_target::Vector{Float64}
+    matches::Vector{Any}
+    domain::CPITree
+    codomain::CPITree
 end
 
 """
     FullCPIMatch(df::DataFrame)
 
 This constructor method returns a `FullCPIMatch` structure 
-from the matching DataFrame between the source and target databases.
-
-The `df` DataFrame has the following structure:
-    - The first column contains the codes from the target database.
-    - The second column contains the name or description of each of
-     the categories in the target database.
-    - The third column must contain the weights associated with the target database.
-    - The fourth column contains the codes from the source database.
-    - The fifth column contains the name or description of each 
-        of the categories in the source database.
-    - The sixth column must contain the weights associated with the source database.
+from the matching DataFrame between the domain and codomain databases.
     - An example of what this DataFrame might look like is shown below:
 ```
 437×6 DataFrame
@@ -68,7 +162,7 @@ The `df` DataFrame has the following structure:
    2 │ _011151   Maíz                               0.828818   _0111102  Maíz                               0.711087
    3 │ _011153   Harina de maíz                     0.0936981  _0111201  Harina de trigo                    0.0559046
    4 │ _011153   Harina de maíz                     0.0936981  _0111202  Harina de maíz                     0.170136
-  ⋮  │    ⋮                      ⋮                      ⋮         ⋮                      ⋮                      ⋮
+   ⋮  │    ⋮                      ⋮                      ⋮         ⋮                      ⋮                      ⋮
  434 │ _093121   Gastos por servicios funerarios    0.289885   _1390902  Servicios funerarios               0.154298
  435 │ _094111   Gastos por servicios diversos pa…  0.151793   _1390903  Servicios de registro civil        0.0459723
  436 │ _061121   Adquisición de otros vehí…         0.155166   _1390904  Pago de impuestos de circulació…   0.139208
@@ -77,154 +171,88 @@ The `df` DataFrame has the following structure:
 """
 
 
-function FullCPIMatch(df::DataFrame)
-    return FullCPIMatch(
-        codes_source = df[!, 4],
-        codes_target = df[!, 1],
-        descriptions_source = df[!, 5],
-        descriptions_target = df[!, 2],
-        ws_source = df[!, 3],
-        ws_target = df[!, 6]
+function FullCPIMatch(
+        df::DataFrame,
+        domain::CPITree,
+        codomain::CPITree,
+        codes_dom::Symbol,
+        codes_codom::Symbol
     )
-end
-
-"""
-```
-    target_code(match::AbstractCPIMatch, code::String)
-Function to find a code from source base  in target base
-```
-"""
-function target_code(match::AbstractCPIMatch, code_source::String)
-    idx = findfirst(==(code_source), match.codes_source)
-    if isnothing(idx)
-        error("Code $code_source not found")
-    end
-    return match.codes_target[idx]
-end
-
-
-"""
-```
-    target_description(match::FullCPIMatch, code::String)
-Function to find a name from source base in target base
-```
-"""
-function target_description(match::FullCPIMatch, code_source::String)
-    index = findfirst(==(code_source), match.codes_source)
-    if isnothing(idx)
-        error("Code $code_source not found")
-    end
-    return match.descriptions_target[index]
+    matches = matchcell_list(df, codes_dom, codes_codom)
+    return FullCPIMatch(matches, domain, codomain)
 
 end
 
 """
-```
-    source_code(match::AbstractCPIMatch, code_target::String)
-Function to find  codes in source base from target base. Matching is not
-a biyective relation. 
-```
-"""
-function source_code(match::AbstractCPIMatch, code_target::String)
-    indxs = findall(==(code_target), match.codes_target)
-    if isnothing(idxs)
-        error("Code $code_target not found")
-    end
-    return [match.codes_source[index] for index in indxs]
+    find_codes_images(m::FullCPIMatch, codes::Vector{String})
 
+Find all codomain codes that correspond to a given domain code in a `FullCPIMatch`.
+
+# Arguments
+- `m::FullCPIMatch`: The matching object containing the correspondence.
+- `codes::Vector{String}`: The domain codes to search for.
+
+# Returns
+- A collection of output codes (images) for the given domain codes.
+
+# Errors
+Throws an error if the code is not found in the domain.
+"""
+function find_codes_images(m::FullCPIMatch, codes::Vector{String})
+    match_cells = m.matches
+    all_inputs = [match_cells[i].inputs for i in eachindex(match_cells)]
+    indx = findall(==(codes), all_inputs)
+    isempty(indx) && error("Codes $codes not found")
+    images = [match_cells[i].outputs for i in indx][1]
+    if images === nothing
+        @warn "Code $codes has no corresponding images (method: $(match_cells[indx][1].method))"
+        images = match_cells[indx][1].method
+    end
+    return images
 end
 
 """
-```
-    source_description(match::FullCPIMatch, code_target::String)
-Function to find  names in source base from target base. Matching is not
-a biyective relation. 
-```
+    find_descriptions_images(m::FullCPIMatch, code::Vector{String})
+
+Find the descriptions (names) of all codes in the codomain that correspond to a given domain code.
+
+# Arguments
+- `m::FullCPIMatch`: The matching object containing the correspondence.
+- `code::AbstractString`: The domain code to search for.
+
+# Returns
+- A vector of description strings for the corresponding codomain codes.
+
+# See Also
+- [`find_codes_images`](@ref): Returns the codes instead of descriptions.
 """
-function source_description(match::FullCPIMatch, code_target::String)
-    indxs = findall(==(code_target), match.codes_target)
-    if isnothing(idxs)
-        error("Code $code_target not found")
+function find_descriptions_images(m::FullCPIMatch, codes::Vector{String})
+    images = find_codes_images(m, codes)
+    if images isa Symbol
+        @warn "No images found for code $codes, returning method name instead: $images"
+        descriptions = [string(images)]
+    else
+        indxs = findall(x -> x in images, m.codomain.group_codes)
+        descriptions = m.codomain.group_names[indxs]
     end
-    return [match.descriptions_source[index] for index in indxs]
+    return images, descriptions
 end
 
 
 function Base.show(io::IO, m::FullCPIMatch)
-    table = hcat(
-        m.codes_source,
-        m.descriptions_source,
-        m.ws_source,
-        m.codes_target,
-        m.descriptions_target,
-        m.ws_target
-    )
+    for i in eachindex(m.matches)
+        codes = m.matches[i].inputs
+        images, descriptions = find_descriptions_images(m, codes)
+        table = hcat(images, descriptions)
+        println(io, "↳ Domain: $codes")
+        println(io, "↳ Codomain: ")
 
-    header = [
-        "code_dest",
-        "name_dest",
-        "w_dest",
-        "code_source",
-        "name_source",
-        "w_source",
-    ]
-    println(io)
-    return PrettyTables.pretty_table(
-        io, table;
-        column_labels = header,
-        vertical_crop_mode = :middle,
-        show_row_number_column = true,
-        backend = :text,
-        column_label_width_based_on_first_line_only = true,
-    )
-end
-
-
-"""
-   CPIMatch
-
-Structure representing a  match between two CPI bases
-(source and target).
-
-Contains only codes of items in bases
-"""
-Base.@kwdef struct CPIMatch <: AbstractCPIMatch
-    codes_source::CODETYPE
-    codes_target::CODETYPE
-end
-
-function CPIMatch(m::FullCPIMatch)
-    return CPIMatch(
-        codes_source = m.codes_source,
-        codes_target = m.codes_target,
-    )
-end
-
-function CPIMatch(df::DataFrame)
-    return CPIMatch(
-        codes_source = df[!, 4],
-        codes_target = df[!, 1],
-    )
-end
-
-
-function Base.show(io::IO, m::CPIMatch)
-    table = hcat(
-        m.codes_source,
-        m.codes_target,
-    )
-
-    header = [
-        "code_dest",
-        "code_source",
-    ]
-    println(io)
-    return PrettyTables.pretty_table(
-        io, table;
-        column_labels = header,
-        vertical_crop_mode = :middle,
-        show_row_number_column = true,
-        backend = :text,
-        column_label_width_based_on_first_line_only = true,
-    )
+        header = ["Code", "Name"]
+        #alignment = [:c, :l, :l, :r]
+        PrettyTables.pretty_table(
+            io, table;
+            column_labels = header,
+        )
+    end
+    return
 end
