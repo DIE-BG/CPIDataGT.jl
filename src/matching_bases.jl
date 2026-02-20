@@ -184,6 +184,19 @@ function FullCPIMatch(
 end
 
 """
+     find_descriptions(m::FullCPIMatch, code::Vector{String}, domain::CPITree)
+"""
+function find_descriptions(m, code::Vector{String}, domain::CPITree)
+    indxs = findall(x -> x in code, domain.group_codes)
+    return reverse(domain.group_names[indxs])
+end
+
+function find_codes(m::FullCPIMatch, description::String, domain::CPITree)
+    indxs = findfirst(x -> x == description, domain.group_names)
+    return domain.group_codes[indxs]
+end
+
+"""
     find_codes_images(m::FullCPIMatch, codes::Vector{String})
 
 Find all codomain codes that correspond to a given domain code in a `FullCPIMatch`.
@@ -198,17 +211,25 @@ Find all codomain codes that correspond to a given domain code in a `FullCPIMatc
 # Errors
 Throws an error if the code is not found in the domain.
 """
-function find_codes_images(m::FullCPIMatch, codes::Vector{String})
+function find_codes_images(m::FullCPIMatch, code::String)
     match_cells = m.matches
-    all_inputs = [match_cells[i].inputs for i in eachindex(match_cells)]
-    indx = findall(==(codes), all_inputs)
-    isempty(indx) && error("Codes $codes not found")
-    images = [match_cells[i].outputs for i in indx][1]
-    if images === nothing
-        @warn "Code $codes has no corresponding images (method: $(match_cells[indx][1].method))"
-        images = match_cells[indx][1].method
+    all_inputs = vcat([match_cells[i].inputs for i in eachindex(match_cells)]...)
+    indx = findall(==(code), all_inputs)
+    isempty(indx) && error("Code $code not found")
+    cells = match_cells[indx]
+    images = vcat(getproperty.(cells, :outputs)...)
+
+    if isnothing(first(images))
+        method = first(cells).method
+        @warn "Code $code has no corresponding images (method: $method)"
+        images = method
     end
-    return images
+    return indx, images
+end
+
+
+function find_codes_images(m::FullCPIMatch, codes::AbstractVector{<:String})
+    return find_codes_images.(Ref(m), codes)
 end
 
 """
@@ -226,18 +247,21 @@ Find the descriptions (names) of all codes in the codomain that correspond to a 
 # See Also
 - [`find_codes_images`](@ref): Returns the codes instead of descriptions.
 """
-function find_descriptions_images(m::FullCPIMatch, codes::Vector{String})
-    images = find_codes_images(m, codes)
-    if images isa Symbol
+function find_descriptions_images(m::FullCPIMatch, code::String)
+    indxs, images = find_codes_images(m, code)
+    if images[1] isa Symbol
         @warn "No images found for code $codes, returning method name instead: $images"
         descriptions = [string(images)]
     else
-        indxs = findall(x -> x in images, m.codomain.group_codes)
         descriptions = m.codomain.group_names[indxs]
     end
     return images, descriptions
 end
 
+
+function find_descriptions_images(m::FullCPIMatch, code::String)
+    return find_descriptions_images.(Ref(m), code)
+end
 
 function Base.show(io::IO, m::FullCPIMatch)
     for i in eachindex(m.matches)

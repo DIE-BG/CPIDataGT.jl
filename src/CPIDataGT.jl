@@ -26,14 +26,14 @@ export GTDATA
 ## DataFrames objects
 export DF_ITEMS_00, DF_ITEMS_10, DF_ITEMS_23, DF_ITEMS_24
 export DF_CPI_00, DF_CPI_10, DF_CPI_23, DF_CPI_24
-export DF_CPIMATCH_10_23, DF_CPIMATCH_00_23, DF_CPIMATCH_23_10
+export DF_CPIMATCH_10_23, DF_CPIMATCH_23_00, DF_CPIMATCH_23_10
 ## Functions to build and load data
 export load_data, load_tree_data, load_dataframes
 #load_matching
-
+export FMATCH_23_00, FMATCH_23_10, FMATCH_10_23
 
 export FullCPIMatch, matchcell_list, matchcell_list_inverse, getcpimatch, CodeMatchCell
-export find_codes_images, find_descriptions_images
+export find_codes_images, find_descriptions_images, find_descriptions
 # Functions
 include("matching_bases.jl")
 ## Paths
@@ -154,8 +154,8 @@ function load_matching()
     isfile(datafile) || build_data()
     # Load data
     @info "Loading the Guatemalan CPI matching data..."
-    global FMATCH_00_23, FMATCH_10_23 = load(datafile, "fmatch_00_23", "fmatch_10_23")
-    return @info "Data loaded in exported consts `MATCH_00_23`, `MATCH_10_23`"
+    global FMATCH_23_00, FMATCH_23_10, FMATCH_10_23 = load(datafile, "fmatch_23_00", "fmatch_23_10", "fmatch_10_23")
+    return @info "Data loaded in exported consts `FMATCH_23_00`, `FMATCH_23_10`, and `FMATCH_10_23`"
 end
 
 
@@ -312,6 +312,31 @@ function build_data()
 
     matching_from_b10_to_b23_df = CSV.read(datadir("matching_CPI_2023_2010.csv"), DataFrame, normalizenames = true)
 
+    ## Creating matching structures
+    FMATCH_23_10 = FullCPIMatch(
+        matching_from_b23_to_b10_df,
+        CPITREE23,
+        CPITREE10,
+        :code_b23,
+        :code_b10
+    )
+
+    FMATCH_23_00 = FullCPIMatch(
+        matching_from_b23_to_b00_df,
+        CPITREE23,
+        CPITREE00,
+        :code_b23,
+        :code_b00
+    )
+
+    FMATCH_10_23 = FullCPIMatch(
+        matching_from_b10_to_b23_df,
+        CPITREE10,
+        CPITREE23,
+        :code_b10,
+        :code_b23
+    )
+
     ## Save data in JLD2 format for later loading
     @info "Saving JLD2 data files"
 
@@ -361,6 +386,10 @@ function build_data()
         cpi_00_tree = cpi_00_tree_64,
         cpi_10_tree = cpi_10_tree_64,
         cpi_23_tree = cpi_23_tree_64,
+        # Matching structures
+        fmatch_23_00 = FMATCH_23_00,
+        fmatch_23_10 = FMATCH_23_10,
+        fmatch_10_23 = FMATCH_10_23,
 
     )
 
