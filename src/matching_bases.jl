@@ -193,7 +193,7 @@ end
 
 function find_codes(m::FullCPIMatch, description::String, domain::CPITree)
     indxs = findfirst(x -> x == description, domain.group_names)
-    return domain.group_codes[indxs]
+    return indxs, domain.group_codes[indxs]
 end
 
 """
@@ -224,7 +224,7 @@ function find_codes_images(m::FullCPIMatch, code::String)
         @warn "Code $code has no corresponding images (method: $method)"
         images = method
     end
-    return indx, images
+    return images
 end
 
 
@@ -248,30 +248,33 @@ Find the descriptions (names) of all codes in the codomain that correspond to a 
 - [`find_codes_images`](@ref): Returns the codes instead of descriptions.
 """
 function find_descriptions_images(m::FullCPIMatch, code::String)
-    indxs, images = find_codes_images(m, code)
-    if images[1] isa Symbol
-        @warn "No images found for code $codes, returning method name instead: $images"
-        descriptions = [string(images)]
+    images = find_codes_images(m, code)
+    if images isa Symbol
+        @warn "No images found for code $code, returning method name instead: $images"
+        indxs = nothing
+        descriptions = string(images)
     else
+        indxs = findall(x -> x in images, m.codomain.group_codes)
+        isempty(indxs) && error("No matching codes found in codomain for code $code")
         descriptions = m.codomain.group_names[indxs]
     end
-    return images, descriptions
+    return indxs, images, descriptions
 end
 
 
 function find_descriptions_images(m::FullCPIMatch, code::String)
     return find_descriptions_images.(Ref(m), code)
 end
-
+# TO DO: change show method for FullCPIMatch to print the matches in a nice way
 function Base.show(io::IO, m::FullCPIMatch)
     for i in eachindex(m.matches)
-        codes = m.matches[i].inputs
-        images, descriptions = find_descriptions_images(m, codes)
-        table = hcat(images, descriptions)
-        println(io, "↳ Domain: $codes")
+        code = m.matches[i].inputs[1]
+        indxs, images, descriptions = find_descriptions_images(m, code)
+        table = hcat(indxs, images, descriptions)
+        println(io, "↳ Domain: $code")
         println(io, "↳ Codomain: ")
 
-        header = ["Code", "Name"]
+        header = ["Item ", "Code", "Name"]
         #alignment = [:c, :l, :l, :r]
         PrettyTables.pretty_table(
             io, table;

@@ -315,24 +315,24 @@ function build_data()
     ## Creating matching structures
     FMATCH_23_10 = FullCPIMatch(
         matching_from_b23_to_b10_df,
-        CPITREE23,
-        CPITREE10,
+        cpi_23_tree_64,
+        cpi_10_tree_64,
         :code_b23,
         :code_b10
     )
 
     FMATCH_23_00 = FullCPIMatch(
         matching_from_b23_to_b00_df,
-        CPITREE23,
-        CPITREE00,
+        cpi_23_tree_64,
+        cpi_00_tree_64,
         :code_b23,
         :code_b00
     )
 
     FMATCH_10_23 = FullCPIMatch(
         matching_from_b10_to_b23_df,
-        CPITREE10,
-        CPITREE23,
+        cpi_10_tree_64,
+        cpi_23_tree_64,
         :code_b10,
         :code_b23
     )
